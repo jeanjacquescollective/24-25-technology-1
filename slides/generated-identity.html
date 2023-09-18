@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../dist/reset.css" />
+    <link rel="stylesheet" href="../dist/reveal.css" />
+    <link rel="stylesheet" href="../dist/theme/black.css" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="../plugin/highlight/monokai.css" />
+    <title>Generate Yourself</title>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+        <!-- Instruction (First 30 Minutes) -->
+        <section data-background-image="../assets/images/generated-content/loading.gif">
+          <h1>Generated Content</h1>
+        </section>
+
+        <!-- Generated Content (Last 30 Minutes) -->
+        <section data-background-image="../assets/images/generated-content/cat.gif">
+          <ul>
+            <li>Make a description about yourself in text</li>
+            <li>
+              Let <a href="https://anonchatgpt.com/">AnonChatGPT</a> rephrase your description and turn it in a prompt
+              that can generate an image
+            </li>
+            <li>
+              Make use of <a href="https://perchance.org/ai-text-to-image-generator">Perchance</a> (Text-To-Image) to generate an image in the
+              style you want.
+            </li>
+            <li>
+              If you are satisfied with the result, post your name, image and
+              text on this shared <a href="https://padlet.com/janneslambrecht/presenting-technology-1-w82imbd7ctvep2vm">Padlet</a>.
+            </li>
+          </ul>
+        </section>
+        <section data-background-image="../assets/images/generated-content/showoff.gif">
+            <h2>Present yourself</h2>
+        </section>
+    </section>
+      </div>
+    </div>
+
+    <script src="../dist/reveal.js"></script>
+    <script src="../plugin/notes/notes.js"></script>
+    <script src="../plugin/markdown/markdown.js"></script>
+    <script src="../plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
+</html>
