@@ -9,283 +9,334 @@
 
     <title>Machine Learning vs. Traditional Programming</title>
 
-    <link rel="stylesheet" href="dist/reset.css" />
-    <link rel="stylesheet" href="dist/reveal.css" />
-    <link rel="stylesheet" href="dist/theme/black.css" />
+    <link rel="stylesheet" href="../dist/reset.css" />
+    <link rel="stylesheet" href="../dist/reveal.css" />
+    <link rel="stylesheet" href="../dist/theme/black.css" />
 
     <!-- Theme used for syntax highlighted code -->
-    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+    <link rel="stylesheet" href="../plugin/highlight/monokai.css" />
+    <link rel="stylesheet" href="../dist/main.css" />
   </head>
   <body>
     <div class="reveal">
       <div class="slides">
         <section>
           <!-- Slide 1: Title -->
-          <section data-background-image="./assets/images/old-man.jpeg" data-background-opacity=".5">
-            <h1>Machine Learning <br>vs. <br> 
-                Traditional Programming</h1>
+          <section
+            data-background-image="../assets/images/ml-vs-traditional/old-programming.gif"
+            data-background-opacity=".5"
+          >
+            <h1>
+              Machine Learning <br />vs. <br />
+              Traditional Programming
+            </h1>
           </section>
 
           <!-- Slide 2: Introduction -->
         </section>
-        <section>
+        <section
+
+        >
           <!-- Section 1: Understanding Traditional Programming -->
-          <section>
+          <section data-background-image="../assets/images/ml-vs-traditional/hacker.gif"
+          data-background-opacity=".5">
             <h2>Understanding Traditional Programming</h2>
           </section>
 
           <!-- Slide 4: Definition of Traditional Programming -->
-          <section>
+          <section data-background-image="../assets/images/ml-vs-traditional/programming.gif"
+          data-background-opacity=".5">
             <h2>Definition of Traditional Programming</h2>
-            <p>Explain what traditional programming is</p>
-            <p>
-              Mention its characteristics (rule-based, explicit instructions,
-              deterministic)
-            </p>
+
+            <ul>
+              <li>Strict rules</li>
+              <li>Deterministic</li>
+              <li>Human-defined</li>
+            </ul>
           </section>
 
           <!-- Slide 5: Examples of Traditional Programming -->
           <section>
             <h2>Examples of Traditional Programming</h2>
-            <p>
-              Provide examples of traditional programming languages (e.g., Java,
-              C++)
-            </p>
-            <p>Explain how these languages work with clear code snippets</p>
+            <pre><code data-trim data-noescape>
+import time
+
+def wake_up():
+    print("Alarm rings...")
+    time.sleep(2)
+    print("Hit snooze...")
+    time.sleep(2)
+    print("Hit snooze again...")
+    time.sleep(2)
+    print("Promise to wake up...")
+
+    
+if __name__ == "__main__":
+    wake_up()
+                </code></pre>
           </section>
 
           <!-- Slide 6: Strengths of Traditional Programming -->
-          <section>
-            <h2>Strengths of Traditional Programming</h2>
-            <p>Discuss the advantages of traditional programming</p>
-            <p>Emphasize control, predictability, and reliability</p>
+          <section data-background-image="../assets/images/ml-vs-traditional/programming.gif"
+          data-background-opacity=".5">
+            <h2>Strengths</h2>
+            <ul>
+              <li>Explicit control</li>
+              <li>High precision</li>
+              <li>Easy to debug</li>
+            </ul>
           </section>
 
           <!-- Slide 7: Weaknesses of Traditional Programming -->
-          <section>
-            <h2>Weaknesses of Traditional Programming</h2>
-            <p>Highlight the limitations of traditional programming</p>
-            <p>
-              Discuss scalability challenges and the need for human-defined
-              rules
-            </p>
-          </section>
+          <section data-background-image="../assets/images/ml-vs-traditional/programming.gif"
+          data-background-opacity=".5">
+            <h2>Weaknesses</h2>
+            <ul>
+              <li>Not adaptable</li>
+              <li>Not scalable</li>
+              <li>Not automated</li>
+              <li>Human intervention needed</li>
+            </ul>
+          </section >
+
+            <!-- Slide 8: Traditional Programming Workflow -->
+            <section data-background-image="../assets/images/ml-vs-traditional/flow.gif"
+            data-background-opacity=".5">
+                <h2>Traditional Programming Workflow</h2>
+                <ul>
+                    <li>Define the problem</li>
+                    <li>Design the solution</li>
+                    <li>Implement the solution</li>
+                    <li>Test the solution</li>
+                    <li>Deploy the solution</li>
+                </ul>
+            </section>
+            <section data-background-image="../assets/images/ml-vs-traditional/fibonacci.gif"
+            data-background-opacity=".5">
+                <h2>Exercise</h2>
+                <p>Write a program that prints the first 10 numbers of the Fibonacci sequence.</p>
+            </section>
+
         </section>
         <section>
           <!-- Section 2: Introduction to Machine Learning -->
-          <section>
+          <section data-background-image="../assets/images/ml-vs-traditional/machine-learning.gif"
+          data-background-opacity=".5">
             <h2>Introduction to Machine Learning</h2>
           </section>
 
           <!-- Slide 8: What is Machine Learning? -->
-          <section>
+          <section data-auto-animate data-background-image="../assets/images/ml-vs-traditional/machine-learning.gif"
+          data-background-opacity=".5">
             <h2>What is Machine Learning?</h2>
-            <p>Define machine learning</p>
-            <p>Explain that it's a subset of artificial intelligence (AI)</p>
+          </section>
+          <section data-auto-animate data-background-image="../assets/images/ml-vs-traditional/machine-learning.gif"
+          data-background-opacity=".5">
+            <h2>What is Machine Learning?</h2>
+            <ul>
+              <li>Learn from data</li>
+              <li>Make predictions</li>
+              <li>Discover patterns</li>
+              <li>Subset of AI</li>
+            </ul>
           </section>
 
           <!-- Slide 9: How Machine Learning Differs -->
-          <section>
+          <section data-background-image="../assets/images/ml-vs-traditional/differs.gif"
+          data-background-opacity=".5">
             <h2>How Machine Learning Differs</h2>
-            <p>Contrast machine learning with traditional programming</p>
-            <p>Mention that ML learns from data and makes predictions</p>
+            <ul>
+              <li>Not explicitly programmed</li>
+              <li>Not deterministic</li>
+              <li>Not human-defined</li>
+            </ul>
           </section>
 
           <!-- Slide 10: Types of Machine Learning -->
-          <section>
+          <section data-background-image="../assets/images/ml-vs-traditional/differs.gif"
+          data-background-opacity=".5">
             <h2>Types of Machine Learning</h2>
-            <p>
-              Introduce supervised, unsupervised, and reinforcement learning
-            </p>
-            <p>Provide brief examples for each type</p>
+            <ul>
+              <li>Supervised</li>
+              <li>Unsupervised</li>
+              <li>Reinforcement</li>
+            </ul>
+          </section>
+
+          <section data-background-image="../assets/images/ml-vs-traditional/supervised-1.gif"
+          data-background-opacity=".5">
+            <h2>Supervised Learning</h2>
+            <ul>
+                <li>Learn from labeled data</li>
+                <li>Regression & Classification</li>
+                <li>External supervision</li>
+                <li>Maps the labeled inputs to the known outputs</li>
+                <li>More accurate</li>
+            </ul>
+          </section>
+
+          <section data-background-image="../assets/images/ml-vs-traditional/unsupervised.gif"
+          data-background-opacity=".5">
+            <h2>Unsupervised Learning</h2>
+            <ul>
+                <li>Learn from unlabeled data</li>
+                <li>Association, Clustering & Dimensionality Reduction (preprocessing)</li>
+                <li>No supervision</li>
+                <li>Understands patterns & discovers the output</li>
+                <li>Hidden patterns</li>
+                <li>No predictions</li>
+            </ul>
+          </section >
+          <section data-background-image="../assets/images/ml-vs-traditional/semi-supervised.gif"
+          data-background-opacity=".5">
+            <h2>Semi-supervised learning</h2>
+            <ul>
+                <li>Learn from labeled and unlabeled data</li>
+                <li>Combines supervised and unsupervised learning</li>
+                <li>Uses unlabeled data to improve supervised learning</li>
+                <li>Uses supervised learning to label unlabeled data</li>
+          </section>
+          <section data-background-image="../assets/images/ml-vs-traditional/reinforcement.gif"
+          data-background-opacity=".5">
+            <h2>Reinforcement Learning</h2>
+            <ul>
+                <li>Learn from feedback - reward-based</li>
+                <li>No predefined data</li>
+                <li>No supervision</li>
+                <li>Trial-and-error</li>
+                <li>Agent interacts with environment</li>
+            </ul>
+          </section>
+
+          <section data-background-image="../assets/images/ml-vs-traditional/just-out-of-reach.gif"
+          data-background-opacity=".5">
+            <h2>Can killerbots exist?</h2>
           </section>
 
           <!-- Slide 11: Machine Learning Workflow -->
-          <section>
+          <section data-background-image="../assets/images/ml-vs-traditional/flow.gif"
+          data-background-opacity=".5">
             <h2>Machine Learning Workflow</h2>
-            <p>Explain the typical steps in a machine learning project</p>
-            <p>
-              Include data collection, preprocessing, modeling, evaluation, and
-              deployment
-            </p>
-          </section>
-
-          <!-- Section 3: Key Differences -->
-          <section>
-            <h2>Key Differences</h2>
+            <ul>
+              <li>Data collection</li>
+              <li>Data preprocessing</li>
+              <li>Modeling</li>
+              <li>Evaluation</li>
+              <li>Deployment</li>
+            </ul>
           </section>
 
           <!-- Slide 12: Data-Driven vs. Rule-Driven -->
-          <section>
+          <section data-background-image="../assets/images/ml-vs-traditional/rule.gif"
+          data-background-opacity=".5">
             <h2>Data-Driven vs. Rule-Driven</h2>
-            <p>
-              Highlight the fundamental difference: data-driven (ML) vs.
-              rule-driven (traditional programming)
-            </p>
-            <p>Use a simple diagram to illustrate this concept</p>
+            <ul>
+                <li>Traditional programming: rule-driven</li>
+                <li>Single-cell bacteria</li>
+                <li>Machine learning: data-driven</li>
+                <li>Humans</li>
+            </ul>
           </section>
 
           <!-- Slide 13: Adaptability -->
-          <section>
-            <h2>Adaptability</h2>
-            <p>
-              Discuss how traditional programs require manual updates for
-              changing conditions
-            </p>
-            <p>Explain how ML models can adapt to new data</p>
+          <section data-background-image="../assets/images/ml-vs-traditional/transformers.gif"
+          data-background-opacity=".5">
+          <h2>Pro</h2>
+            <ul>    
+                <li>Scalability</li>
+                <li>Adaptability</li>
+                <li>Automation</li>
+                <li>Handling complex data</li>
+                <li>Decision making</li>
+            </ul>
           </section>
-
-          <!-- Slide 14: Handling Complex Data -->
-          <section>
-            <h2>Handling Complex Data</h2>
-            <p>Showcase how ML can handle vast amounts of unstructured data</p>
-            <p>
-              Provide examples like image recognition and natural language
-              processing
-            </p>
-          </section>
-
-          <!-- Slide 15: Decision Making -->
-          <section>
-            <h2>Decision Making</h2>
-            <p>
-              Describe how traditional programs follow explicit instructions
-            </p>
-            <p>
-              Explain that ML models make decisions based on patterns in data
-            </p>
+          <section data-background-image="../assets/images/ml-vs-traditional/robot-fail.gif"
+          data-background-opacity=".5">
+            <h2>Cons</h2>
+            <ul>
+                <li>Interpretability</li>
+                <li>Biases</li>
+                <li>Overfitting</li>
+                <li>Computational power</li>
+                <li>Large data requirements</li>
+            </ul>
           </section>
         </section>
         <section>
-          <!-- Section 4: Use Cases -->
-          <section>
-            <h2>Use Cases</h2>
-          </section>
 
           <!-- Slide 16: Traditional Programming Use Cases -->
-          <section>
+          <section data-background-image="../assets/images/ml-vs-traditional/easy-task.gif"
+          data-background-opacity=".5">
             <h2>Traditional Programming Use Cases</h2>
-            <p>Show examples of where traditional programming excels</p>
-            <p>Mention scenarios where precise control is necessary</p>
+            <ul>
+                <li>Simple tasks</li>
+                <li>Static tasks</li>
+                <li>Tasks with limited data</li>
+            </ul>
           </section>
 
           <!-- Slide 17: Machine Learning Use Cases -->
-          <section>
-            <h2>Machine Learning Use Cases</h2>
-            <p>Highlight the domains where machine learning shines</p>
-            <p>
-              Include applications like recommendation systems, autonomous
-              vehicles, and healthcare
-            </p>
-          </section>
-
-          <!-- Slide 18: Pros of Machine Learning -->
-          <section>
-            <h2>Pros of Machine Learning</h2>
-            <p>Discuss the strengths of machine learning</p>
-            <p>Include scalability, adaptability, and automation</p>
-          </section>
-
-          <!-- Slide 19: Cons of Machine Learning -->
-          <section>
-            <h2>Cons of Machine Learning</h2>
-            <p>Present the challenges and limitations of machine learning</p>
-            <p>Discuss data requirements, interpretability, and biases</p>
-          </section>
-
-          <!-- Slide 20: Pros of Traditional Programming -->
-          <section>
-            <h2>Pros of Traditional Programming</h2>
-            <p>Summarize the advantages of traditional programming</p>
-            <p>Emphasize precision and control</p>
-          </section>
-
-          <!-- Slide 21: Cons of Traditional Programming -->
-          <section>
-            <h2>Cons of Traditional Programming</h2>
-            <p>Mention the drawbacks of traditional programming</p>
-            <p>Discuss challenges in handling complex and evolving tasks</p>
+          <section data-background-image="../assets/images/ml-vs-traditional/complex-task.gif"
+          data-background-opacity=".5">            
+          <h2>Machine Learning Use Cases</h2>
+            <ul>
+                <li>Recommendation systems</li>
+                <li>Autonomous vehicles</li>
+                <li>Healthcare</li>
+            </ul>
           </section>
         </section>
 
         <section>
+            <section>
+                <h2>Trigger warning</h2>
+                <p>Robotic love</p>
+            </section>
           <!-- Section 6: Integration -->
-          <section>
+          <section data-background-image="../assets/images/ml-vs-traditional/integration.gif"
+          data-background-opacity=".5" data-background-size="contain">
             <h2>Integration</h2>
           </section>
 
           <!-- Slide 22: The Future: Integration -->
-          <section>
+          <section data-background-image="../assets/images/ml-vs-traditional/the-future.gif"
+          data-background-opacity=".5" >
             <h2>The Future: Integration</h2>
-            <p>
-              Explain the potential for combining machine learning and
-              traditional programming
-            </p>
-            <p>Discuss hybrid systems and their benefits</p>
+            <ul>
+                <li>Machine learning and traditional programming are not mutually exclusive</li>
+                <li>Machine learning can be used to improve traditional programming
+                </li>
+                <li>Machine learning can be used to automate traditional programming</li>
+            </ul>
           </section>
 
           <!-- Slide 23: Case Study -->
-          <section>
+          <section data-background-image="../assets/images/ml-vs-traditional/case.gif"
+          data-background-opacity=".5">
             <h2>Case Study</h2>
-            <p>
-              Provide a real-world example of how machine learning and
-              traditional programming can work together
-            </p>
-            <p>Showcase the impact of this integration</p>
           </section>
 
           <!-- Slide 24: Conclusion -->
-          <section>
+          <section data-background-image="../assets/images/ml-vs-traditional/conclusion.gif"
+          data-background-opacity=".5" >
             <h2>Conclusion</h2>
-            <p>Summarize the main points discussed in the presentation</p>
           </section>
 
-          <!-- Slide 25: Closing Thoughts -->
-          <section>
-            <h2>Closing Thoughts</h2>
-            <p>Offer your personal perspective on the topic</p>
-            <p>Mention the ongoing evolution of technology</p>
-          </section>
 
           <!-- Slide 26: Q&A -->
-          <section>
+          <section data-background-image="../assets/images/ml-vs-traditional/qaa.gif"
+          data-background-opacity=".5" >
             <h2>Q&A</h2>
-            <p>Invite the audience to ask questions</p>
           </section>
 
-          <!-- Slide 27: Thank You -->
-          <section>
-            <h2>Thank You</h2>
-            <p>Express your gratitude to the audience for their attention</p>
-          </section>
-
-          <!-- Slide 28: Contact Information -->
-          <section>
-            <h2>Contact Information</h2>
-            <p>Provide your contact information for further inquiries</p>
-          </section>
-
-          <!-- Slide 29: Additional Resources -->
-          <section>
-            <h2>Additional Resources</h2>
-            <p>
-              Share recommended books, articles, or websites for further reading
-            </p>
-          </section>
-
-          <!-- Slide 30: References -->
-          <section>
-            <h2>References</h2>
-            <p>List the sources and references used in your presentation</p>
-          </section>
         </section>
       </div>
     </div>
 
-    <script src="dist/reveal.js"></script>
-    <script src="plugin/notes/notes.js"></script>
-    <script src="plugin/markdown/markdown.js"></script>
-    <script src="plugin/highlight/highlight.js"></script>
+    <script src="../dist/reveal.js"></script>
+    <script src="../plugin/notes/notes.js"></script>
+    <script src="../plugin/markdown/markdown.js"></script>
+    <script src="../plugin/highlight/highlight.js"></script>
     <script>
       // More info about initialization & config:
       // - https://revealjs.com/initialization/
