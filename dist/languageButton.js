@@ -10,7 +10,7 @@ function toggleLanguage() {
 function updateLanguage() {
   let languageElement = document.getElementsByClassName('language-button')[0];
   languageElement.innerHTML = '' + languages[currentLanguageIndex];
-  if (languages[currentLanguageIndex] === 'NL') {
+  if (languages[currentLanguageIndex] === 'EN') {
     englishElements.forEach(element => {
       element.style.display = 'none';
     });
