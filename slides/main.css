@@ -1,0 +1,41 @@
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a background color for the whole page */
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+}
+
+/* Style the list */
+.link-list {
+  list-style-type: none;
+  width: 100%; /* Take up the whole page width */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+/* Style the list items */
+.link-list li {
+  margin-bottom: 10px; /* Add spacing between list items */
+  
+}
+
+/* Style the links */
+.link-list a {
+  text-decoration: none; /* Remove underlines */
+  color: #333; /* Text color */
+  display: block; /* Make the whole list item clickable */
+  border-radius: 5px; /* Rounded corners for links */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+  padding: 10px 150px;
+  font-size: 50pt;
+}
+
+/* Change link background color on hover */
+.link-list a:hover {
+  background-color: #ddd; /* Light gray on hover */
+}
