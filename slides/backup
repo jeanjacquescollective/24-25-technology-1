@@ -1,0 +1,221 @@
+<section
+            data-background-image="../assets/images/definition/neural-networks.jpeg"
+            data-background-opacity=".5"
+          >
+            <h2>Artificial Neural Networks (ANNs)</h2>
+            <p language="nl">
+              ANN's zijn computersystemen die geïnspireerd zijn op de structuur
+              en functie van biologische neurale netwerken, gebruikt bij diep
+              leren.
+            </p>
+          </section>
+
+          <section
+            data-background-image="../assets/images/definition/algorithm.gif"
+            data-background-opacity=".3"
+          >
+            <h2>Algorithm</h2>
+            <p language="nl">
+              Een algoritme is een stapsgewijze reeks instructies voor het
+              oplossen van een specifiek probleem op te lossen of een taak uit
+              te voeren.
+            </p>
+          </section>
+
+          <section
+            data-background-image="../assets/images/definition/data-center.gif"
+            data-background-opacity=".3"
+          >
+            <h2>Data Science</h2>
+            <p language="nl">
+              Data Science combineert domeinkennis, programmeervaardigheden en
+              gegevensanalyse om zinvolle inzichten uit gegevens te halen.
+            </p>
+          </section>
+
+          <section
+            data-background-image="../assets/images/definition/weak-ai.jpeg"
+            data-background-opacity=".3"
+          >
+            <h2>Narrow AI (Weak AI)</h2>
+            <p language="nl">
+              Nauwe AI <s>, ook bekend als zwakke AI,</s> verwijst naar
+              AI-systemen die zijn ontworpen voor specifieke taken of domeinen,
+              zonder de algemene intelligentie zoals we die bij mensen zien.
+            </p>
+          </section>
+
+          <section
+            data-background-image="../assets/images/definition/weak-ai.jpeg"
+            data-background-opacity=".3"
+          >
+            <h2>GPU</h2>
+            <p language="nl">Graphical Processing Unit</p>
+          </section>
+
+          <section
+            data-background-image="../assets/images/definition/strong-ai.jpeg"
+            data-background-opacity=".3"
+          >
+            <h2>General AI (Strong AI)</h2>
+            <p language="nl">
+              Algemene AI <s>, of Sterke AI,</s>, staat voor machines met een
+              menselijke intelligentie die een breed scala aan cognitieve taken
+              kunnen uitvoeren en verschillende domeinen kan begrijpen.
+            </p>
+          </section>
+
+          <section
+            data-background-image="../assets/images/definition/labeled-data.png"
+            data-background-opacity=".3"
+          >
+            <h2>Supervised Learning</h2>
+            <p language="nl">
+              Supervised Learning is een type ML waarbij het model wordt
+              getraind op gelabelde gegevens, voorspellingen doet en de
+              nauwkeurigheid in de loop van de tijd verbetert.
+            </p>
+          </section>
+
+          <section
+            data-background-image="../assets/images/definition/unlabeled-data-car.jpg"
+            data-background-opacity=".3"
+          >
+            <h2>Unsupervised Learning</h2>
+            <p language="nl">
+              Unsupervised Learning is een type ML waarbij het model werkt met
+              ongelabelde gegevens om zelf patronen en relaties te ontdekken.
+            </p>
+          </section>
+
+          <section
+            data-background-image="../assets/images/definition/feedback.webp"
+            data-background-opacity=".3"
+          >
+            <h2>Reinforcement Learning</h2>
+            <p language="nl">
+              Versterkingsleren is een vorm van ML waarbij agenten leren om
+              beslissingen te nemen door interactie met een omgeving en het
+              ontvangen van beloningen of straffen.
+            </p>
+          </section>
+
+          <section
+            data-background-image="../assets/images/definition/big-data.gif"
+            data-background-opacity=".3"
+          >
+            <h2>Big Data</h2>
+            <p language="nl">
+              Big Data verwijst naar extreem grote en complexe datasets die
+              gespecialiseerde tools en technieken nodig hebben voor opslag,
+              verwerking en analyse.
+            </p>
+          </section>
+
+          <section
+            data-background-image="../assets/images/definition/dilemma.gif"
+            data-background-opacity=".3"
+          >
+            <h2>AI Ethics</h2>
+            <p language="nl">
+              AI-ethiek gaat in op de morele en maatschappelijke implicaties van
+              AI, waaronder eerlijkheid, transparantie en het verantwoordelijke
+              gebruik van AI technologieën.
+            </p>
+          </section>
+
+          <section
+            data-background-image="../assets/images/definition/racist.webp"
+            data-background-opacity=".3"
+          >
+            <h2>AI Bias</h2>
+            <p language="nl">
+              AI-bias treedt op wanneer algoritmen voor machinaal leren
+              oneerlijke of discriminerende beslissingen nemen op basis van
+              bevooroordeelde trainingsgegevens.
+            </p>
+            <a
+              href="https://www.businessinsider.com/student-uses-playrgound-ai-for-professional-headshot-turned-white-2023-8?op=1&r=US&IR=T"
+              >Article</a
+            >
+          </section>
+
+          <section
+            data-background-image="../assets/images/definition/her.jpg"
+            data-background-opacity=".3"
+          >
+            <h2>Chatbot</h2>
+            <p language="nl">
+              Een Chatbot is een AI-programma dat is ontworpen om een gesprek
+              met gebruikers te simuleren. conversatie met gebruikers te
+              simuleren, vaak gebruikt voor klantenondersteuning of het ophalen
+              van informatie.
+            </p>
+          </section>
+
+          <section
+            data-background-image="../assets/images/definition/iot.jpg"
+            data-background-opacity=".3"
+          >
+            <h2>IoT (Internet of Things)</h2>
+            <p language="nl">
+              IoT is een netwerk van onderling verbonden apparaten en objecten
+              die gegevens kunnen verzamelen en uitwisselen, vaak geïntegreerd
+              met AI voor slimme toepassingen.
+            </p>
+          </section>
+
+          <section
+            data-background-image="../assets/images/definition/robots.gif"
+            data-background-opacity=".3"
+          >
+            <h2>Robotic Process Automation (RPA)</h2>
+            <p language="nl">
+              RPA maakt gebruik van softwarerobots of "bots" voor het
+              automatiseren van repetitieve taken en processen, waardoor de
+              efficiëntie in verschillende industrieën verhoogt.
+            </p>
+          </section>
+
+          <section>
+            <h2>GAN (Generative Adversarial Network)</h2>
+            <p language="nl">
+              GAN is a type of deep learning model consisting of a generator and
+              a discriminator used for generating synthetic data and images.
+            </p>
+          </section>
+
+          <section>
+            <h2>LLM (Large Language Models)</h2>
+            <p language="nl">
+              LLMs are extremely large neural networks trained on vast amounts
+              of text data, capable of performing various natural language
+              processing tasks.
+            </p>
+          </section>
+          <!-- Diffusion Models -->
+          <section>
+            <h2>Diffusion Models</h2>
+            <p language="nl">
+              Diffusion Models are probabilistic generative models used for
+              modeling and generating data sequences, often applied to text,
+              images, and time series data.
+            </p>
+          </section>
+          <!-- Audio/Image Synthesis -->
+          <section>
+            <h2>Audio/Image Synthesis</h2>
+            <p language="nl">
+              Audio/Image Synthesis involves generating realistic audio or image
+              data using AI techniques, such as deep learning and GANs.
+            </p>
+          </section>
+          <!-- GPU -->
+          <section>
+            <h2>GPU (Graphics Processing Unit)</h2>
+            <p language="nl">
+              A GPU is specialized hardware used to accelerate computations in
+              deep learning and AI, known for its parallel processing
+              capabilities.
+            </p>
+          </section>

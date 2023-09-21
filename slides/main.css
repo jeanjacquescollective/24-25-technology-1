@@ -39,3 +39,33 @@ body {
 .link-list a:hover {
   background-color: #ddd; /* Light gray on hover */
 }
+
+.language-button{
+  /* Style the language button */
+  display: inline-block;
+  position: absolute;
+  top: 20px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
+  padding: 10px 20px;
+  background-color: #0074d9; /* Change the background color to your preference */
+  color: #ffffff; /* Text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+  z-index: 155;
+}
+
+/* Hover effect */
+#language-button:hover {
+  background-color: #0056b3; /* Change the hover background color */
+}
+
+/* Adjust button position if needed */
+#language-button {
+  position: absolute;
+  top: 20px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
+}
+}
