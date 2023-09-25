@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>Introduction into Deep Learning</title>
+
+    <link rel="stylesheet" href="../dist/reset.css" />
+    <link rel="stylesheet" href="../dist/reveal.css" />
+    <link rel="stylesheet" href="../dist/theme/black.css" />
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="../plugin/highlight/monokai.css" />
+    <link rel="stylesheet" href="../dist/theme/custom.css" />
+    <link rel="stylesheet" href="../dist/main.css" />
+  </head>
+  <body>
+    <button class="language-button" onclick="toggleLanguage()">
+      Toggle Language
+    </button>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <section>
+            <h1>Intro Deep Learning!</h1>
+          </section>
+          <section>
+            <p>Met behulp van Keras en Tensorflow leer je hoe je:</p>
+            <ul>
+              <li>neurale netwerken maken</li>
+              <li>
+                neurale netwerken toepassen op twee klassieke ML-problemen:
+                regressie en classificatie
+              </li>
+              <li>
+                neurale netwerken trainen met stochastische gradiëntafdaling
+              </li>
+              <li>
+                prestaties verbeteren met dropout, batchnormalisatie en andere
+                technieken
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Wat is Deep Learning?</h2>
+            <p>
+              Deep learning is een aanpak binnen machine learning waarbij diepe
+              berekeningen worden gebruikt om complexe patronen in uitdagende
+              datasets te identificeren.
+            </p>
+            <p>
+              Neurale netwerken zijn de kern van deep learning vanwege hun
+              kracht en schaalbaarheid. Deze netwerken bestaan uit neuronen die
+              eenvoudige berekeningen uitvoeren, maar hun complexiteit komt
+              voort uit de verbindingen tussen deze neuronen.
+            </p>
+          </section>
+
+          <section>
+            <h2>De Lineaire Eenheid</h2>
+            <p>
+              De fundamentele component van een neuraal
+              netwerk is het individuele neuron. Als diagram ziet een neuron (of
+              eenheid) met één invoer er als volgt uit:
+            </p>
+            <img src="../assets/images/intro-deep-learning/neuron-diagram.png" alt="Diagram van een lineaire eenheid" />
+            <p>Activatie van de neuron is: y = w * x + b</p>
+            <aside class="notes">
+            <p>
+              De invoer is x. De verbinding met het neuron heeft een gewicht w.
+              Telkens wanneer een waarde door een verbinding stroomt,
+              vermenigvuldig je de waarde met het gewicht van de verbinding.
+              Voor de invoer x is wat het neuron bereikt w * x. Een neuraal
+              netwerk "leert" door zijn gewichten aan te passen.
+            </p>
+            <p>
+              De b is een speciaal soort gewicht dat we de bias noemen. De bias
+              heeft geen bijbehorende invoergegevens; in plaats daarvan plaatsen
+              we een 1 in het diagram, zodat de waarde die het neuron bereikt
+              gewoon b is (omdat 1 * b = b). De bias stelt het neuron in staat
+              om de uitvoer onafhankelijk van de invoer aan te passen.
+            </p>
+            
+            </aside>
+          </section>
+          <section>
+            <h2>Formule?</h2>
+            <p>y = w * x + b</p>
+            <aside class="notes"><p>
+                De y is de waarde die het neuron uiteindelijk uitvoert. Om de
+                uitvoer te krijgen, telt het neuron alle waarden op die het
+                ontvangt via zijn verbindingen. De activatie van dit neuron is y =
+                w * x + b, of als formule y = wx + b.
+              </p>
+              <p>
+                Komt de formule y = wx + b je bekend voor? Het is een vergelijking
+                van een lijn! Het is de helling-intercept vergelijking, waarbij w
+                de helling is en b de y-intercept.
+              </p></aside>
+          </section>
+
+          <section>
+            <h2>Voorbeeld - De Lineaire Eenheid als Model</h2>
+            <a href="https://www.kaggle.com/datasets/crawford/80-cereals" target="_blank">Link naar dataset</a>
+            <ul>
+                <li>Invoer: 'suikers' (gram suiker per portie)</li>
+                <li>Uitvoer: 'calorieën'
+                    (calorieën per portie)</li> 
+            </ul>
+          </section>
+          <section>
+            <p>Berekend</p>
+            <ul>
+                <li>bias b = 90</li>
+                <li>gewicht w = 2.5</li>
+            </ul>
+            <p>We zouden het
+                caloriegehalte van een ontbijtgranen met 5 gram suiker per portie
+                als volgt kunnen schatten:</p>
+            <img
+              src="../assets/images/intro-deep-learning/examples-neural-models.png"
+              alt="Berekening met de lineaire eenheid"
+            />
+            <p>
+              Controle: calorieën
+              = 2.5 × 5 + 90 = 102.5
+            </p>
+          </section>
+
+          <section>
+            <h2>Meerdere Invoeren</h2>
+            <ul>
+                <li>Meer kenmerken = meer invoerverbindingen</li>
+                <li>Uitvoer: elke invoer * verbindingsgewicht</li>
+            </ul>
+            <img
+              src="../assets/images/intro-deep-learning/more-input.png"
+              alt="Drie invoerverbindingen: x0, x1 en x2, samen met de bias"
+            />
+            <p>
+              Formule y = w0x0 + w1x1 + w2x2 + b.
+            </p>
+            <aside class="notes">
+                hypervlak
+            </aside>
+          </section>
+
+          <section>
+            <h2>Lineaire Eenheiden in Keras</h2>
+            <pre><code>from tensorflow import keras
+from tensorflow.keras import layers
+
+# Maak een netwerk met 1 lineaire eenheid
+model = keras.Sequential([
+    layers.Dense(units=1, input_shape=[3])
+])
+</code></pre>
+<aside class="notes">
+            <p>
+              Met het eerste argument, units, definiëren we hoeveel uitvoer we
+              willen. In dit geval voorspellen we alleen 'calorieën', dus zullen
+              we units=1 gebruiken.
+            </p>
+            <p>
+              Met het tweede argument, input_shape, vertellen we Keras de
+              dimensies van de invoer. Door input_shape=[3] in te stellen,
+              zorgen we ervoor dat het model drie kenmerken als invoer
+              accepteert ('suikers', 'vezels' en 'eiwitten').
+            </p>
+            <p>
+              Dit model is nu klaar om te worden aangepast aan
+              trainingsgegevens!
+            </p>
+            <h2>Waarom is input_shape een Python-lijst?</h2>
+            <p>
+              De gegevens die we in deze cursus zullen gebruiken, zijn
+              tabelgegevens, zoals in een Pandas-dataset. We hebben één invoer
+              voor elk kenmerk in de dataset. De kenmerken zijn gerangschikt per
+              kolom, dus we zullen altijd input_shape=[num_kolommen] hebben. De
+              reden dat Keras hier een lijst gebruikt, is om het gebruik van
+              complexere gegevenssets mogelijk te maken. Beeldgegevens
+              bijvoorbeeld kunnen drie dimensies nodig hebben: [hoogte, breedte,
+              kanalen].
+            </p>
+        </aside>
+          </section>
+
+          
+
+          <section>
+            <h2>Jouw Beurt</h2>
+            <p>
+              Definieer een lineair model voor de dataset <a href="https://www.kaggle.com/code/jacqueslast/exercise-a-single-neuron/edit" target="_blank" rel="noopener noreferrer">'Rode Wijnkwaliteit'</a> .
+            </p>
+          </section>
+          <section>
+            Aanpassingen
+          </section>
+        </section>
+      </div>
+    </div>
+    <script src="../dist/languageButton.js"></script>
+    <script src="../dist/reveal.js"></script>
+    <script src="../plugin/notes/notes.js"></script>
+    <script src="../plugin/markdown/markdown.js"></script>
+    <script src="../plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
+</html>
