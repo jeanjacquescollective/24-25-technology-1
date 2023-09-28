@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>Machine Learning vs. Traditional Programming</title>
+
+    <link rel="stylesheet" href="../dist/reset.css" />
+    <link rel="stylesheet" href="../dist/reveal.css" />
+    <link rel="stylesheet" href="../dist/theme/black.css" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="../plugin/highlight/monokai.css" />
+    <link rel="stylesheet" href="../dist/main.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <!-- Slide 1: Title -->
+          <section>
+            <h1>Overview of Different Data Sources</h1>
+            <p>Duration: 30 minutes</p>
+          </section>
+        </section>
+        <section>
+          <!-- Slide 2: Data Sources -->
+          <section>
+            <h2>Data Sources</h2>
+          </section>
+          <section>
+            <h2>Relational Databases</h2>
+            <p>
+              Relational databases are structured data sources that use tables
+              to store data. Common examples include MySQL, PostgreSQL, and
+              Microsoft SQL Server.
+            </p>
+          </section>
+          <section>
+            <h2>NoSQL Databases</h2>
+            <p>
+              NoSQL databases handle unstructured or semi-structured data and
+              include document stores (e.g., MongoDB), key-value stores (e.g.,
+              Redis), and graph databases (e.g., Neo4j).
+            </p>
+          </section>
+          <section>
+            <h2>APIs (Application Programming Interfaces)</h2>
+            <p>
+              APIs allow you to access and retrieve data from various online
+              services. Examples include RESTful APIs, GraphQL, and social media
+              APIs like Twitter's.
+            </p>
+          </section>
+          <section>
+            <h2>Web Scraping</h2>
+            <p>
+              Web scraping involves extracting data from websites. Tools like
+              BeautifulSoup and Scrapy are commonly used for this purpose.
+            </p>
+          </section>
+          <section>
+            <h2>Streaming Data Sources</h2>
+            <p>
+              Streaming data sources provide real-time data feeds, often used
+              for analytics and monitoring. Examples include Apache Kafka and
+              Amazon Kinesis.
+            </p>
+          </section>
+        </section>
+        <section>
+          <!-- Slide 3: Relational Databases -->
+          <section>
+            <h2>Relational Databases</h2>
+            <p>
+              Relational databases are widely used for structured data. They
+              offer ACID (Atomicity, Consistency, Isolation, Durability)
+              properties and are ideal for transactional systems.
+            </p>
+            <p>Common Relational Databases:</p>
+            <ul>
+              <li>MySQL</li>
+              <li>PostgreSQL</li>
+              <li>Microsoft SQL Server</li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <!-- Slide 4: NoSQL Databases -->
+          <section>
+            <h2>NoSQL Databases</h2>
+            <p>
+              NoSQL databases are flexible and suitable for unstructured data.
+              They include:
+            </p>
+            <ul>
+              <li>Document Stores (e.g., MongoDB)</li>
+              <li>Key-Value Stores (e.g., Redis)</li>
+              <li>Column-family Stores (e.g., Cassandra)</li>
+              <li>Graph Databases (e.g., Neo4j)</li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <!-- Slide 5: APIs -->
+          <section>
+            <h2>APIs (Application Programming Interfaces)</h2>
+            <p>APIs enable data access from online services. Types of APIs:</p>
+            <ul>
+              <li>RESTful APIs</li>
+              <li>GraphQL</li>
+              <li>SOAP APIs</li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <!-- Slide 6: Web Scraping -->
+          <section>
+            <h2>Web Scraping</h2>
+            <p>
+              Web scraping is the process of extracting data from websites. It's
+              used when data isn't available through APIs or databases.
+            </p>
+            <p>Common Tools for Web Scraping:</p>
+            <ul>
+              <li>BeautifulSoup (Python)</li>
+              <li>Scrapy (Python)</li>
+              <li>Puppeteer (JavaScript)</li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <!-- Slide 7: Streaming Data Sources -->
+          <section>
+            <h2>Streaming Data Sources</h2>
+            <p>
+              Streaming data sources provide real-time data. They are used for
+              applications requiring immediate data processing and analysis.
+            </p>
+            <p>Examples of Streaming Data Sources:</p>
+            <ul>
+              <li>Apache Kafka</li>
+              <li>Amazon Kinesis</li>
+              <li>Apache Flink</li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>Data Storage</h2>
+          </section>
+          <!-- Slide 8: Data Warehouses -->
+          <section>
+            <h2>Data Warehouses</h2>
+            <p>
+              Data warehouses are repositories for historical data used for
+              reporting and analysis. Examples include Snowflake and Amazon
+              Redshift.
+            </p>
+          </section>
+
+          <!-- Slide 9: Cloud Storage -->
+          <section>
+            <h2>Cloud Storage</h2>
+            <p>
+              Cloud storage services like Amazon S3 and Google Cloud Storage
+              provide scalable, durable storage for various data types.
+            </p>
+          </section>
+
+          <!-- Slide 10: IoT Data Sources -->
+          <section>
+            <h2>IoT Data Sources</h2>
+            <p>
+              IoT devices generate massive amounts of data. Collecting and
+              analyzing this data is crucial for IoT applications.
+            </p>
+          </section>
+
+          <!-- Slide 11: Social Media Data -->
+          <section>
+            <h2>Social Media Data</h2>
+            <p>
+              Social media platforms offer APIs for accessing user-generated
+              content and engagement data.
+            </p>
+          </section>
+
+          <!-- Slide 12: Geographic Data -->
+          <section>
+            <h2>Geographic Data</h2>
+            <p>
+              Geographic information systems (GIS) provide spatial data used in
+              maps, navigation, and urban planning.
+            </p>
+          </section>
+
+          <!-- Slide 13: Big Data Sources -->
+          <section>
+            <h2>Big Data Sources</h2>
+            <p>
+              Big data sources include massive datasets generated by businesses,
+              social media, and scientific research.
+            </p>
+          </section>
+
+          <!-- Slide 14: Data Lakes -->
+          <section>
+            <h2>Data Lakes</h2>
+            <p>
+              Data lakes store raw, unstructured data that can be processed and
+              analyzed later. Examples include AWS Glue and Azure Data Lake
+              Storage.
+            </p>
+          </section>
+
+          <!-- Slide 15: Data from External Partners -->
+          <section>
+            <h2>Data from External Partners</h2>
+            <p>
+              Collaborating with external partners often involves sharing and
+              integrating data from different sources.
+            </p>
+          </section>
+
+          <!-- Slide 16: Data Source Selection Criteria -->
+          <section>
+            <h2>Data Source Selection Criteria</h2>
+            <p>
+              Choosing the right data source depends on factors like data
+              volume, structure, real-time requirements, and cost.
+            </p>
+          </section>
+
+          <!-- Slide 17: Data Source Challenges -->
+          <section>
+            <h2>Data Source Challenges</h2>
+            <p>
+              Challenges include data quality issues, security concerns, and
+              ensuring data privacy compliance.
+            </p>
+          </section>
+
+          <!-- Slide 18: Data Source Integration -->
+          <section>
+            <h2>Data Source Integration</h2>
+            <p>
+              Integrating data from various sources may require ETL (Extract,
+              Transform, Load) processes and data pipelines.
+            </p>
+          </section>
+
+          <!-- Slide 19: Data Source Use Cases -->
+          <section>
+            <h2>Data Source Use Cases</h2>
+            <p>
+              Explore real-world use cases for different data sources, from
+              e-commerce analytics to healthcare data analysis.
+            </p>
+          </section>
+
+          <!-- Slide 20: Data Source Trends -->
+          <section>
+            <h2>Data Source Trends</h2>
+            <p>
+              Stay up-to-date with emerging trends like edge computing,
+              federated learning, and data mesh architecture.
+            </p>
+          </section>
+
+          <!-- Slide 21: Data Source Security -->
+          <section>
+            <h2>Data Source Security</h2>
+            <p>
+              Address security concerns by implementing access controls,
+              encryption, and auditing for sensitive data sources.
+            </p>
+          </section>
+
+          <!-- Slide 22: Data Governance -->
+          <section>
+            <h2>Data Governance</h2>
+            <p>
+              Data governance policies ensure data quality, compliance, and
+              ethical use across different data sources.
+            </p>
+          </section>
+
+          <!-- Slide 23: Data Source Examples -->
+          <section>
+            <h2>Data Source Examples</h2>
+            <p>
+              Provide specific industry examples for each data source to
+              illustrate their applications.
+            </p>
+          </section>
+
+          <!-- Slide 24: Data Source Best Practices -->
+          <section>
+            <h2>Data Source Best Practices</h2>
+            <p>
+              Highlight best practices for data source management, including
+              data documentation and metadata management.
+            </p>
+          </section>
+
+          <!-- Slide 25: Case Study 1 -->
+          <section>
+            <h2>Case Study 1: Retail Analytics</h2>
+            <p>
+              Explore how different data sources are used in a retail analytics
+              scenario to optimize inventory and sales.
+            </p>
+          </section>
+
+          <!-- Slide 26: Case Study 2 -->
+          <section>
+            <h2>Case Study 2: Healthcare Insights</h2>
+            <p>
+              Examine data sources and their role in improving healthcare
+              outcomes and patient care through data-driven decisions.
+            </p>
+          </section>
+
+          <!-- Slide 27: Case Study 3 -->
+          <section>
+            <h2>Case Study 3: Social Media Analysis</h2>
+            <p>
+              Discover how social media data sources are leveraged for sentiment
+              analysis and marketing insights.
+            </p>
+          </section>
+
+          <!-- Slide 28: Future of Data Sources -->
+          <section>
+            <h2>Future of Data Sources</h2>
+            <p>
+              Discuss emerging technologies and the evolving landscape of data
+              sources in the digital age.
+            </p>
+          </section>
+
+          <!-- Slide 29: Q&A -->
+          <section>
+            <h2>Q&A</h2>
+            <p>
+              Open the floor for questions and discussions about different data
+              sources and their applications.
+            </p>
+          </section>
+
+          <!-- Slide 30: Conclusion -->
+          <section>
+            <h2>Conclusion</h2>
+            <p>
+              Summarize key takeaways and emphasize the importance of
+              understanding and choosing the right data sources for successful
+              data projects.
+            </p>
+          </section>
+        </section>
+      </div>
+    </div>
+
+    <script src="../dist/reveal.js"></script>
+    <script src="../plugin/notes/notes.js"></script>
+    <script src="../plugin/markdown/markdown.js"></script>
+    <script src="../plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
+</html>
