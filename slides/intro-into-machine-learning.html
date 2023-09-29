@@ -52,9 +52,8 @@
           <section>
             <h2>Basisprincipes van Machine Learning</h2>
             <ul>
-              <li>Introductie van Beslissingsbomen</li>
               <li>Beslissingsbomen als basisbouwstenen</li>
-              <li>Beginnen met de eenvoudigste beslissingsboom</li>
+              <li>Uitbreiden</li>
             </ul>
           </section>
 
@@ -69,6 +68,7 @@
               <li>Toepassing van het model om woningprijzen te voorspellen</li>
             </ul>
           </section>
+          <section></section>
           <section data-background-opacity=".8">
             <img
               src="../assets/images/intro-machine-learning/decision-tree.png"
@@ -102,15 +102,6 @@
               alt=""
             />
           </section>
-          <section>
-            <h2>Oefening</h2>
-            <a
-              href="https://www.kaggle.com/code/dansbecker/basic-data-exploration/tutorial"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Verken data</a
-            >
-          </section>
         </section>
         <!-- data exploratie -->
         <section
@@ -120,10 +111,10 @@
           <section>
             <h1>Data Verkennen met Pandas</h1>
             <ul>
-              <li>Stap 1: Maak jezelf bekend met de data.</li>
-              <li>We gebruiken de Pandas-bibliotheek hiervoor.</li>
+              <li>Stap 1: Data leren kennen.</li>
+              <li>Pandas-bibliotheek</li>
               <li>
-                Pandas is de belangrijkste tool voor data scientists om data te
+                Pandas is een belangrijkste tool voor data scientists om data te
                 verkennen en te manipuleren.
               </li>
               <li>Meestal wordt Pandas afgekort als 'pd' in de code.</li>
@@ -144,12 +135,9 @@
             <h2>Belangrijkste Onderdeel: DataFrame</h2>
             <ul>
               <li>
-                Een DataFrame = tabel in Excel of een tabel in een SQL-database.
+                DataFrame = 2-dimensionale tabel (Excel, SQL-database, ...)
               </li>
-              <li>
-                Pandas biedt krachtige methoden voor het werken met dit soort
-                data.
-              </li>
+              <li>Pandas > krachtige methoden voor deze soort data</li>
             </ul>
           </section>
 
@@ -360,7 +348,15 @@
               <li>max: grootste getal</li>
             </ul>
           </section>
-
+          <section>
+            <h2>Kaggle-uitleg</h2>
+            <a
+              href="https://www.kaggle.com/code/dansbecker/basic-data-exploration/tutorial"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Verken data</a
+            >
+          </section>
           <!-- Slide 8 -->
           <section>
             <h2>Aan de Slag!</h2>
@@ -384,20 +380,17 @@
 
           <!-- Slide 2 -->
           <section>
-            <h2>Overweldigende Hoeveelheid Data?</h2>
-            <p>
-              Je dataset heeft te veel variabelen om te bevatten. Hoe kun je
-              deze data begrijpelijk maken?
-            </p>
+            <h2>Overweldigende Hoeveelheid Data</h2>
+            <p>Data begrijpelijk maken?</p>
           </section>
 
           <!-- Slide 3 -->
           <section>
             <h2>Variabelen Selecteren</h2>
-            <p>
-              We beginnen met intuïtief enkele variabelen te kiezen. Later leer
-              je statistische technieken voor automatische prioritering.
-            </p>
+            <ul>
+              <li>Intuïtief</li>
+              <li>Statistische technieken</li>
+            </ul>
           </section>
 
           <!-- Slide 4 -->
@@ -413,49 +406,47 @@
           <!-- Slide 5 -->
           <section>
             <h2>Missende Waarden</h2>
-            <p>
-              De dataset bevat missende waarden. We zullen hier later mee
-              omgaan. Voor nu, laten we huizen met missende waarden verwijderen.
-            </p>
+            <ul>
+              <li>Missende waarden verwijderen</li>
+            </ul>
             <pre><code data-trim data-noescape>melbourne_data = melbourne_data.dropna(axis=0)</code></pre>
           </section>
 
           <!-- Slide 6 -->
           <section>
             <h2>Subselectie van Data</h2>
-            <p>
-              We focussen nu op twee benaderingen: dot-notatie voor het
-              voorspelde doel en kolommen selecteren.
-            </p>
+            <ul>
+              <li>Dot-notatie</li>
+              <li>Kolommen selecteren</li>
+            </ul>
           </section>
 
           <!-- Slide 7 -->
           <section>
-            <h2>Voorspeld Doel Selecteren</h2>
-            <p>
-              Gebruik dot-notatie om de kolom te selecteren die je wilt
-              voorspellen (doorgaans 'y').
-            </p>
+            <h2>Voorspelde Doel Selecteren</h2>
+            <ul>
+              <li>dot-notatie</li>
+              <li>te voorspellen variabele <b>y</b></li>
+            </ul>
             <pre><code data-trim data-noescape>y = melbourne_data.Price</code></pre>
           </section>
 
           <!-- Slide 8 -->
           <section>
             <h2>Kenmerken Kiezen</h2>
-            <p>
-              Kolommen die als input in het model worden gebruikt, worden
-              "kenmerken" genoemd. We bouwen eerst een model met een paar
-              kenmerken.
-            </p>
+            <ul>
+              <li>kolommen die als input voor het model worden gebruikt</li>
+              <li>eerst maar met enkele kenmerken</li>
+            </ul>
           </section>
 
           <!-- Slide 9 -->
           <section>
             <h2>Kenmerken Selecteren</h2>
-            <p>
-              Selecteer meerdere kenmerken door een lijst van kolomnamen te
-              geven.
-            </p>
+            <ul>
+              <li>Ophalen uit data door array van kenmerken</li>
+              <li>Variable <b>X</b></li>
+            </ul>
             <pre><code data-trim data-noescape>
 melbourne_features = ['Rooms', 'Bathroom', 'Landsize','Lattitude', 'Longtitude']
 X = melbourne_data[melbourne_features]</code></pre>
@@ -477,10 +468,10 @@ X.head()
           <!-- Slide 11 -->
           <section>
             <h2>Je Model Bouwen</h2>
-            <p>
-              We gebruiken scikit-learn om je model te bouwen. Definieer, pas
-              aan, voorspel en evalueer.
-            </p>
+            <ul>
+              <li>scikit-learn</li>
+              <li>Definieer, pas aan, voorspel en evalueer</li>
+            </ul>
           </section>
 
           <!-- Slide 12 -->
@@ -564,9 +555,10 @@ melbourne_model = DecisionTreeRegressor(random_state=1)
           <section>
             <h2>Probeer Het Zelf!</h2>
             <p>
-              <a href="https://www.kaggle.com/kernels/fork/1404276"
-                >Probeer zelf een model te bouwen in de Model Building
-                Exercise.</a
+              <a
+                href="https://www.kaggle.com/kernels/fork/1404276"
+                target="_blank"
+                >Probeer zelf een model te bouwen</a
               >
             </p>
           </section>
@@ -578,12 +570,15 @@ melbourne_model = DecisionTreeRegressor(random_state=1)
         >
           <section>
             <h1>Model Validatie</h1>
-            <p>Je hebt een model gebouwd. Maar hoe goed is het?</p>
+            <p>Maar hoe goed is het model?</p>
           </section>
           <section>
-            <h2>Wat is Model Validatie?</h2>
-            <p>We willen bijna elk model evalueren dat we bouwen.</p>
-            <p>maatstaf voor modelkwaliteit voorspellende nauwkeurigheid.</p>
+            <h2>Model Validatie</h2>
+            <ul>
+              <li>model evalueren</li>
+              <li>voorspellingen vergelijken met de werkelijke waarden</li>
+              <li>modelkwaliteit</li>
+            </ul>
           </section>
 
           <section>
@@ -648,8 +643,7 @@ melbourne_model = DecisionTreeRegressor(random_state=1)
               <a
                 href="https://www.kaggle.com/kernels/fork/1259097"
                 target="_blank"
-                >Voordat we naar verbeteringen van dit model kijken, probeer
-                Model Validatie zelf.</a
+                >Probeer Model Validatie zelf.</a
               >
             </p>
           </section>
@@ -701,6 +695,8 @@ melbourne_model = DecisionTreeRegressor(random_state=1)
               We willen het evenwicht vinden tussen underfitting en overfitting
               voor de beste nauwkeurigheid op nieuwe gegevens.
             </p>
+          </section>
+          <section>
             <img
               src="../assets/images/intro-machine-learning/overfitting-vs-underfitting.png"
               alt="Grafiek met underfitting en overfitting"
@@ -709,10 +705,9 @@ melbourne_model = DecisionTreeRegressor(random_state=1)
 
           <section>
             <h2>Vergelijk Verschillende Diepten</h2>
-            <p>
-              Max_leaf_nodes is een handige manier om overfitting te
-              controleren. Meer bladeren verplaatsen ons naar overfitting.
-            </p>
+            <ul>
+              <li>Max_leaf_nodes-methode</li>
+            </ul>
           </section>
 
           <section>
@@ -761,7 +756,14 @@ for max_leaf_nodes in [5, 50, 500, 5000]:
 
           <section>
             <h1>Jouw Beurt</h1>
-            <p><a href="https://www.kaggle.com/kernels/fork/1259126" target="_blank"> Optimaliseer het model dat je eerder hebt gebouwd.</a></p>
+            <p>
+              <a
+                href="https://www.kaggle.com/kernels/fork/1259126"
+                target="_blank"
+              >
+                Optimaliseer je model</a
+              >
+            </p>
           </section>
         </section>
         <!-- random forest -->
@@ -771,23 +773,25 @@ for max_leaf_nodes in [5, 50, 500, 5000]:
         >
           <section>
             <h1>Inleiding</h1>
-            <p>
-              Decision trees stellen je voor een lastige keuze. 
-            </p>
-              <ul>
-                <li>diepe boom > overfitting</li>
-                <li>ondiep > underfitting</li>
-              </ul>
+            <p>Decision trees stellen je voor een lastige keuze.</p>
+            <ul>
+              <li>diepe boom > overfitting</li>
+              <li>ondiep > underfitting</li>
+            </ul>
           </section>
           <section>
             <h3>Random forest</h3>
             <ul>
-                <li>veel bomen</li>
-                <li>Voorspellingen worden gemiddeld over alle bomen</li>
-                <li>Betere voorspellende nauwkeurigheid dan enkele beslissingsboom</li>
-                <li>Werkt goed met standaardparameters</li>
-                <li>Mogelijkheid om meer modellen te leren</li>
-                <li>Verbeterde prestaties mogelijk, maar afhankelijk van parameters</li>
+              <li>veel bomen</li>
+              <li>Voorspellingen worden gemiddeld over alle bomen</li>
+              <li>
+                Betere voorspellende nauwkeurigheid dan enkele beslissingsboom
+              </li>
+              <li>Werkt goed met standaardparameters</li>
+              <li>Mogelijkheid om meer modellen te leren</li>
+              <li>
+                Verbeterde prestaties mogelijk, maar afhankelijk van parameters
+              </li>
             </ul>
           </section>
           <section>
@@ -818,16 +822,13 @@ print(mean_absolute_error(val_y, melb_preds))
           <section>
             <h1>Conclusie</h1>
             <ul>
-                <li>Random Forests presteren over het algemeen goed</li>
-                <li>Parameters om prestaties te verbeteren</li>
+              <li>Random Forests presteren over het algemeen goed</li>
+              <li>Parameters om prestaties te verbeteren</li>
             </ul>
           </section>
           <section>
             <h1>Aan de slag</h1>
-            <p>
-              Probeer zelf een Random Forest-model te gebruiken en kijk hoeveel
-              het de prestaties van je model verbetert.
-            </p>
+            <a href="https://www.kaggle.com/kernels/fork/1259186" target="_blank">Probeer zelf het Random Forest Model</a>
           </section>
         </section>
       </div>
