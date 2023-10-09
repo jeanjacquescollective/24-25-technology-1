@@ -36,7 +36,7 @@
             data-background-image="../assets/images/data-source/intro.jpeg"
             data-background-opacity=".3"
           >
-            <h2>Structure</h2>
+            <h2>Database Design</h2>
           </section>
           <!-- Slide 3: Relational Databases -->
           <section
@@ -61,8 +61,15 @@
               <li>Microsoft SQL Server</li>
             </ul>
           </section>
-          <section data-background-image="../assets/images/data-source/intro.jpeg" data-background-opacity=".3" >
-            <a href="https://www.w3schools.com/mySQl/mysql_editor.asp" target="_blank">Example</a>
+          <section
+            data-background-image="../assets/images/data-source/intro.jpeg"
+            data-background-opacity=".3"
+          >
+            <a
+              href="https://www.w3schools.com/mySQl/mysql_editor.asp"
+              target="_blank"
+              >Example</a
+            >
           </section>
           <!-- Slide 4: NoSQL Databases -->
           <section
@@ -75,45 +82,65 @@
               They include:
             </p>
             <ul>
-              <li>Document Stores (e.g., <a href="https://www.mycompiler.io/new/mongodb" target="_blank">MongoDB</a>)</li>
-              <li>Key-Value Stores (e.g., <a href="https://onecompiler.com/redis">Redis</a>)</li>
-              <li>Column-family Stores (e.g., <a href="https://try.redis.io/" target="_blank">Cassandra</a> )</li>
-              <li>Graph Databases (e.g., <a href="https://sandbox.neo4j.com/" target="_blank">Neo4j</a>)</li>
+              <li>
+                Document Stores (e.g.,
+                <a href="https://www.mycompiler.io/new/mongodb" target="_blank"
+                  >MongoDB</a
+                >)
+              </li>
+              <li>
+                Key-Value Stores (e.g.,
+                <a href="https://onecompiler.com/redis">Redis</a>)
+              </li>
+              <li>
+                Column-family Stores (e.g.,
+                <a href="https://try.redis.io/" target="_blank">Cassandra</a> )
+              </li>
+              <li>
+                Graph Databases (e.g.,
+                <a href="https://sandbox.neo4j.com/" target="_blank">Neo4j</a>)
+              </li>
             </ul>
           </section>
+
+          <section>
+            <h2>Database consumation</h2>
+          </section>
           <!-- Slide 5: APIs -->
-          <section data-background-image="../assets/images/data-source/intro.jpeg" data-background-opacity=".3" >
+          <section
+            data-background-image="../assets/images/data-source/intro.jpeg"
+            data-background-opacity=".3"
+          >
             <h2>APIs</h2>
             <p>Application Programming Interfaces</p>
             <p>APIs enable data access from online services.</p>
             <ul>
               <li>RESTful APIs</li>
-              <li><a href="https://lucasconstantino.github.io/graphiql-online/">GraphQL</a></li>
+              <li>
+                <a href="https://lucasconstantino.github.io/graphiql-online/"
+                  >GraphQL</a
+                >
+              </li>
               <li>SOAP APIs</li>
+              <li>Pull</li>
             </ul>
-            <br><br>
-            <a href="https://www.redhat.com/architect/apis-soap-rest-graphql-grpc" target="_blank">Meer informatie</a>
+            <br /><br />
+            <a
+              href="https://www.redhat.com/architect/apis-soap-rest-graphql-grpc"
+              target="_blank"
+              >Meer informatie</a
+            >
           </section>
-          <!-- Slide 6: Web Scraping -->
-          <section
-            data-background-image="../assets/images/data-source/intro.jpeg"
-            data-background-opacity=".3"
-          >
-            <h2>Web Scraping</h2>
-            <ul>
-              <li><a href="https://beautiful-soup-4.readthedocs.io/en/latest/" target="_blank">BeautifulSoup</a> (Python)</li>
-              <li><a href="https://scrapy.org/" target="_blank">Scrapy</a> (Python)</li>
-              <li><a href="https://pptr.dev/" target="_blank">Puppeteer</a> (JavaScript)</li>
-            </ul>
-          </section>
+
           <!-- Slide 7: Streaming Data Sources -->
           <section
             data-background-image="../assets/images/data-source/intro.jpeg"
             data-background-opacity=".3"
           >
-            <h2>Streaming Data Sources</h2>
+            <h2>Streaming API</h2>
             <ul>
               <li>Real-time data</li>
+              <li>Push</li>
               <li>examples</li>
               <ul>
                 <li>Apache Kafka</li>
@@ -121,12 +148,19 @@
                 <li>Apache Flink</li>
               </ul>
             </ul>
-            <aside class="notes">            <p>
-              Streaming data sources provide real-time data. They are used for
-              applications requiring immediate data processing and analysis.
-            </p></aside>
+            <aside class="notes">
+              <p>
+                Streaming data sources provide real-time data. They are used for
+                applications requiring immediate data processing and analysis.
+              </p>
+            </aside>
           </section>
+          <section
+            data-background-image="../assets/images/data-source/REST-vs-Streaming-APIs-How-They-Differ-DIAGRAM.png"
+            data-background-size="contain"
+          ></section>
         </section>
+
         <section>
           <section
             data-background-image="../assets/images/data-source/storage.jpeg"
@@ -159,6 +193,7 @@
             <ul>
               <li>Raw unstructured data</li>
               <li>Process and analyse later</li>
+              <li>ELT</li>
               <li>Cheap to add data</li>
               <li>AWS Glue, Azure Data Lake Storage</li>
             </ul>
@@ -179,9 +214,9 @@
           <section>
             <h2>On-premises</h2>
             <ul>
+              <li>Local</li>
               <li>Private cloud</li>
-              <li>On-premises</li>
-              <li>Hybrid cloud</li>
+
             </ul>
           </section>
           <section>
@@ -197,7 +232,7 @@
             data-background-image="../assets/images/data-source/intro.jpeg"
             data-background-opacity=".3"
           >
-            <h2>How to get data</h2>
+            <h2>Collecting Data</h2>
           </section>
           <!-- Slide 10: IoT Data Sources -->
           <section
@@ -258,13 +293,38 @@
               integrating data from different sources.
             </p>
           </section>
+          <!-- Slide 6: Web Scraping -->
+          <section
+            data-background-image="../assets/images/data-source/intro.jpeg"
+            data-background-opacity=".3"
+          >
+            <h2>Web Scraping</h2>
+            <ul>
+              <li>
+                <a
+                  href="https://beautiful-soup-4.readthedocs.io/en/latest/"
+                  target="_blank"
+                  >BeautifulSoup</a
+                >
+                (Python)
+              </li>
+              <li>
+                <a href="https://scrapy.org/" target="_blank">Scrapy</a>
+                (Python)
+              </li>
+              <li>
+                <a href="https://pptr.dev/" target="_blank">Puppeteer</a>
+                (JavaScript)
+              </li>
+            </ul>
+          </section>
         </section>
         <section>
           <section
             data-background-image="../assets/images/data-source/intro.jpeg"
             data-background-opacity=".3"
           >
-            <h2>Properties</h2>
+            <h2>Data Properties</h2>
           </section>
           <!-- Slide 16: Data Source Selection Criteria -->
           <section
@@ -350,347 +410,488 @@
             </p>
           </section>
 
-          <!-- Slide 24: Data Source Best Practices -->
-          <section
-            data-background-image="../assets/images/data-source/intro.jpeg"
-            data-background-opacity=".3"
-          >
-            <h2>Data Source Best Practices</h2>
-            <p>
-              Highlight best practices for data source management, including
-              data documentation and metadata management.
-            </p>
-          </section>
         </section>
         <!-- pro and cons -->
         <section>
+            <section>
+                <h2>Pros and Cons</h2>
+            </section>
           <!-- Slide 2: Relational Databases -->
+          <section> 
+            <h2>Database Design</h2>
+          </section>
           <section>
             <h2>Relational Databases</h2>
-            <h3>Pros:</h3>
-            <ul>
-              <li>Structured data storage</li>
-              <li>ACID compliance for data consistency</li>
-              <li>Support for complex queries and transactions</li>
-            </ul>
-            <h3>Cons:</h3>
-            <ul>
-              <li>Fixed schema, less flexibility</li>
-              <li>Scalability challenges for large datasets</li>
-              <li>Higher hardware and maintenance costs</li>
-            </ul>
+            <table>
+              <tr>
+                <th>Pros</th>
+                <th>Cons</th>
+              </tr>
+              <tr>
+                <td>Structured data storage</td>
+                <td>Fixed schema, less flexibility</td>
+              </tr>
+              <tr>
+                <td>ACID compliance for data consistency</td>
+                <td>Scalability challenges for large datasets</td>
+              </tr>
+              <tr>
+                <td>Support for complex queries and transactions</td>
+                <td>Higher hardware and maintenance costs</td>
+              </tr>
+            </table>
           </section>
-
+    
           <!-- Slide 3: NoSQL Databases -->
           <section>
             <h2>NoSQL Databases</h2>
-            <h3>Pros:</h3>
-            <ul>
-              <li>Schema-less, flexible data modeling</li>
-              <li>Scalability for large and unstructured data</li>
-              <li>High read and write performance</li>
-            </ul>
-            <h3>Cons:</h3>
-            <ul>
-              <li>Eventual consistency may lead to data conflicts</li>
-              <li>Limited support for complex queries</li>
-              <li>Fragmented NoSQL landscape with different types</li>
-            </ul>
+            <table>
+              <tr>
+                <th>Pros</th>
+                <th>Cons</th>
+              </tr>
+              <tr>
+                <td>Schema-less, flexible data modeling</td>
+                <td>Eventual consistency may lead to data conflicts</td>
+              </tr>
+              <tr>
+                <td>Scalability for large and unstructured data</td>
+                <td>Limited support for complex queries</td>
+              </tr>
+              <tr>
+                <td>High read and write performance</td>
+                <td>Fragmented NoSQL landscape with different types</td>
+              </tr>
+            </table>
           </section>
 
-          <!-- Slide 4: Data Warehouses -->
           <section>
-            <h2>Data Warehouses</h2>
-            <h3>Pros:</h3>
-            <ul>
-              <li>Optimized for analytics and reporting</li>
-              <li>Supports data transformation and aggregation</li>
-              <li>Scalable for handling large datasets</li>
-            </ul>
-            <h3>Cons:</h3>
-            <ul>
-              <li>Expensive to set up and maintain</li>
-              <li>Latency in data loading for real-time use cases</li>
-              <li>Not suitable for transactional processing</li>
-            </ul>
+            <h2>NewSQL Databases</h2>
+            <table>
+              <tr>
+                <th>Pros</th>
+                <th>Cons</th>
+              </tr>
+              <tr>
+                <td>Combines SQL benefits with horizontal scalability</td>
+                <td>May not match the scalability of some NoSQL databases</td>
+              </tr>
+              <tr>
+                <td>Supports ACID transactions for high consistency</td>
+                <td>Less established than traditional RDBMS</td>
+              </tr>
+              <tr>
+                <td>Performance improvements for modern workloads</td>
+                <td>Adoption and ecosystem may vary by vendor</td>
+              </tr>
+            </table>
           </section>
-
+    
+          
+    
+          <!-- Continue adding slides for other database types -->
+    
           <!-- Slide 5: Hadoop Distributed File System (HDFS) -->
           <section>
             <h2>Hadoop Distributed File System (HDFS)</h2>
-            <h3>Pros:</h3>
-            <ul>
-              <li>Scalable and fault-tolerant storage</li>
-              <li>Optimized for big data processing</li>
-              <li>High throughput for large files</li>
-            </ul>
-            <h3>Cons:</h3>
-            <ul>
-              <li>Not suitable for small or frequently updated files</li>
-              <li>Complex to set up and maintain</li>
-              <li>Requires Hadoop ecosystem for full functionality</li>
-            </ul>
+            <table>
+              <tr>
+                <th>Pros</th>
+                <th>Cons</th>
+              </tr>
+              <tr>
+                <td>Scalable and fault-tolerant storage</td>
+                <td>Not suitable for small or frequently updated files</td>
+              </tr>
+              <tr>
+                <td>Optimized for big data processing</td>
+                <td>Complex to set up and maintain</td>
+              </tr>
+              <tr>
+                <td>High throughput for large files</td>
+                <td>Requires Hadoop ecosystem for full functionality</td>
+              </tr>
+            </table>
+          </section>
+    
+          
+    
+          <!-- Continue adding slides for other database types -->
+          <section>
+            <h2>Specialized Databases</h2>
+          </section>
+          <!-- Slide 7: Key-Value Stores -->
+          <section>
+            <h2>Key-Value Stores</h2>
+            <table>
+              <tr>
+                <th>Pros</th>
+                <th>Cons</th>
+              </tr>
+              <tr>
+                <td>Simple and fast data retrieval with key lookups</td>
+                <td>Limited query capabilities beyond key-based access</td>
+              </tr>
+              <tr>
+                <td>Scalable for high read and write workloads</td>
+                <td>May not support complex data structures</td>
+              </tr>
+              <tr>
+                <td>Well-suited for caching and session management</td>
+                <td>Not suitable for relational data</td>
+              </tr>
+            </table>
+          </section>
+    
+          <!-- Continue adding slides for other database types -->
+    
+          <!-- Slide 8: Time Series Databases -->
+          <section>
+            <h2>Time Series Databases</h2>
+            <table>
+              <tr>
+                <th>Pros</th>
+                <th>Cons</th>
+              </tr>
+              <tr>
+                <td>Optimized for storing and querying time-series data</td>
+                <td>Less flexible for non-time-series data</td>
+              </tr>
+              <tr>
+                <td>Efficient for handling large volumes of timestamped data</td>
+                <td>May require additional tools for complex analytics</td>
+              </tr>
+              <tr>
+                <td>Specialized functions for time-based analysis</td>
+                <td>Performance can degrade with very high write loads</td>
+              </tr>
+            </table>
+          </section>
+    
+          <!-- Continue adding slides for other database types -->
+    
+          <!-- Slide 9: Graph Databases -->
+          <section>
+            <h2>Graph Databases</h2>
+            <table>
+              <tr>
+                <th>Pros</th>
+                <th>Cons</th>
+              </tr>
+              <tr>
+                <td>Efficiently represent and query complex relationships</td>
+                <td>Not suitable for all types of data storage</td>
+              </tr>
+              <tr>
+                <td>Highly expressive for graph-based data models</td>
+                <td>Complex queries may require optimization</td>
+              </tr>
+              <tr>
+                <td>Supports traversing and analyzing connected data</td>
+                <td>Performance can degrade with extremely large graphs</td>
+              </tr>
+            </table>
+          </section>
+    
+          <!-- Continue adding slides for other database types -->
+    <!-- Slide 12: Document Databases -->
+          <section>
+            <h2>Document Databases</h2>
+            <table>
+              <tr>
+                <th>Pros</th>
+                <th>Cons</th>
+              </tr>
+              <tr>
+                <td>Flexible schema-less data modeling with JSON or BSON</td>
+                <td>May not provide ACID compliance for transactions</td>
+              </tr>
+              <tr>
+                <td>High read and write performance for document retrieval</td>
+                <td>Complex queries may require denormalization</td>
+              </tr>
+              <tr>
+                <td>Supports hierarchical and nested data structures</td>
+                <td>Scalability challenges for extremely large datasets</td>
+              </tr>
+            </table>
+          </section>
+          <section>
+            <h2>Object Storage</h2>
+            <table>
+              <tr>
+                <th>Pros</th>
+                <th>Cons</th>
+              </tr>
+              <tr>
+                <td>Scalable and cost-effective storage for unstructured data</td>
+                <td>May not support complex querying and transactions</td>
+              </tr>
+              <tr>
+                <td>Global accessibility and data redundancy</td>
+                <td>Latency for data retrieval can vary</td>
+              </tr>
+              <tr>
+                <td>Well-suited for storing files, media, and backups</td>
+                <td>Not suitable for structured relational data</td>
+              </tr>
+            </table>
+          </section>
+          <section>
+            <h2>Columnar Databases</h2>
+            <table>
+              <tr>
+                <th>Pros</th>
+                <th>Cons</th>
+              </tr>
+              <tr>
+                <td>Optimized for analytical queries on large datasets</td>
+                <td>Not suitable for transactional or OLTP workloads</td>
+              </tr>
+              <tr>
+                <td>Columnar storage reduces I/O and improves compression</td>
+                <td>Complexity in updating or deleting individual records</td>
+              </tr>
+              <tr>
+                <td>Efficient for aggregations and reporting</td>
+                <td>May require additional tools for real-time analytics</td>
+              </tr>
+            </table>
+          </section>
+    
+          <!-- Continue adding slides for other database types -->
+          <section>
+            <h2>Data Storage and processing</h2>
+          </section>
+          <!-- Slide 11: Object Storage -->
+          
+          <!-- Slide 10: In-Memory Databases -->
+          <section>
+            <h2>In-Memory Databases</h2>
+            <table>
+              <tr>
+                <th>Pros</th>
+                <th>Cons</th>
+              </tr>
+              <tr>
+                <td>Ultra-fast data retrieval due to memory-resident storage</td>
+                <td>High memory requirements can be expensive</td>
+              </tr>
+              <tr>
+                <td>Low-latency access for real-time applications</td>
+                <td>Data durability and persistence may be a concern</td>
+              </tr>
+              <tr>
+                <td>Optimized for caching and rapid data processing</td>
+                <td>Not ideal for very large datasets</td>
+              </tr>
+            </table>
           </section>
 
           <!-- Slide 6: Cloud-based Data Storage -->
           <section>
             <h2>Cloud-based Data Storage</h2>
-            <h3>Pros:</h3>
-            <ul>
-              <li>Scalable and cost-effective</li>
-              <li>Managed services reduce operational overhead</li>
-              <li>Global accessibility and data redundancy</li>
-            </ul>
-            <h3>Cons:</h3>
-            <ul>
-              <li>Data security and privacy concerns</li>
-              <li>Vendor lock-in potential</li>
-              <li>Latency for data retrieval in some cases</li>
-            </ul>
-          </section>
-          <!-- Slide 7: Key-Value Stores -->
-          <section>
-            <h2>Key-Value Stores</h2>
-            <h3>Pros:</h3>
-            <ul>
-              <li>Simple and fast data retrieval with key lookups</li>
-              <li>Scalable for high read and write workloads</li>
-              <li>Well-suited for caching and session management</li>
-            </ul>
-            <h3>Cons:</h3>
-            <ul>
-              <li>Limited query capabilities beyond key-based access</li>
-              <li>May not support complex data structures</li>
-              <li>Not suitable for relational data</li>
-            </ul>
+            <table>
+              <tr>
+                <th>Pros</th>
+                <th>Cons</th>
+              </tr>
+              <tr>
+                <td>Scalable and cost-effective</td>
+                <td>Data security and privacy concerns</td>
+              </tr>
+              <tr>
+                <td>Managed services reduce operational overhead</td>
+                <td>Vendor lock-in potential</td>
+              </tr>
+              <tr>
+                <td>Global accessibility and data redundancy</td>
+                <td>Latency for data retrieval in some cases</td>
+              </tr>
+            </table>
           </section>
 
-          <!-- Slide 8: Time Series Databases -->
+    
+          <!-- Continue adding slides for other database types -->
           <section>
-            <h2>Time Series Databases</h2>
-            <h3>Pros:</h3>
-            <ul>
-              <li>Optimized for storing and querying time-series data</li>
-              <li>Efficient for handling large volumes of timestamped data</li>
-              <li>Specialized functions for time-based analysis</li>
-            </ul>
-            <h3>Cons:</h3>
-            <ul>
-              <li>Less flexible for non-time-series data</li>
-              <li>May require additional tools for complex analytics</li>
-              <li>Performance can degrade with very high write loads</li>
-            </ul>
+            <h2>Data Integration and Processing</h2>
           </section>
-
-          <!-- Slide 9: Graph Databases -->
+          <!-- Slide 4: Data Warehouses -->
           <section>
-            <h2>Graph Databases</h2>
-            <h3>Pros:</h3>
-            <ul>
-              <li>Efficiently represent and query complex relationships</li>
-              <li>Highly expressive for graph-based data models</li>
-              <li>Supports traversing and analyzing connected data</li>
-            </ul>
-            <h3>Cons:</h3>
-            <ul>
-              <li>Not suitable for all types of data storage</li>
-              <li>Complex queries may require optimization</li>
-              <li>Performance can degrade with extremely large graphs</li>
-            </ul>
+            <h2>Data Warehouses</h2>
+            <table>
+              <tr>
+                <th>Pros</th>
+                <th>Cons</th>
+              </tr>
+              <tr>
+                <td>Optimized for analytics and reporting</td>
+                <td>Expensive to set up and maintain</td>
+              </tr>
+              <tr>
+                <td>Supports data transformation and aggregation</td>
+                <td>Latency in data loading for real-time use cases</td>
+              </tr>
+              <tr>
+                <td>Scalable for handling large datasets</td>
+                <td>Not suitable for transactional processing</td>
+              </tr>
+            </table>
           </section>
-
-          <!-- Slide 10: In-Memory Databases -->
-          <section>
-            <h2>In-Memory Databases</h2>
-            <h3>Pros:</h3>
-            <ul>
-              <li>Ultra-fast data retrieval due to memory-resident storage</li>
-              <li>Low-latency access for real-time applications</li>
-              <li>Optimized for caching and rapid data processing</li>
-            </ul>
-            <h3>Cons:</h3>
-            <ul>
-              <li>High memory requirements can be expensive</li>
-              <li>Data durability and persistence may be a concern</li>
-              <li>Not ideal for very large datasets</li>
-            </ul>
-          </section>
-
-          <!-- Slide 11: Object Storage -->
-          <section>
-            <h2>Object Storage</h2>
-            <h3>Pros:</h3>
-            <ul>
-              <li>Scalable and cost-effective storage for unstructured data</li>
-              <li>Global accessibility and data redundancy</li>
-              <li>Well-suited for storing files, media, and backups</li>
-            </ul>
-            <h3>Cons:</h3>
-            <ul>
-              <li>May not support complex querying and transactions</li>
-              <li>Latency for data retrieval can vary</li>
-              <li>Not suitable for structured relational data</li>
-            </ul>
-          </section>
-
-          <!-- Slide 12: Document Databases -->
-          <section>
-            <h2>Document Databases</h2>
-            <h3>Pros:</h3>
-            <ul>
-              <li>Flexible schema-less data modeling with JSON or BSON</li>
-              <li>High read and write performance for document retrieval</li>
-              <li>Supports hierarchical and nested data structures</li>
-            </ul>
-            <h3>Cons:</h3>
-            <ul>
-              <li>May not provide ACID compliance for transactions</li>
-              <li>Complex queries may require denormalization</li>
-              <li>Scalability challenges for extremely large datasets</li>
-            </ul>
-          </section>
-
-          <!-- Slide 13: Columnar Databases -->
-          <section>
-            <h2>Columnar Databases</h2>
-            <h3>Pros:</h3>
-            <ul>
-              <li>Optimized for analytical queries on large datasets</li>
-              <li>Columnar storage reduces I/O and improves compression</li>
-              <li>Efficient for aggregations and reporting</li>
-            </ul>
-            <h3>Cons:</h3>
-            <ul>
-              <li>Not suitable for transactional or OLTP workloads</li>
-              <li>Complexity in updating or deleting individual records</li>
-              <li>May require additional tools for real-time analytics</li>
-            </ul>
-          </section>
-
           <!-- Slide 14: Data Lakes -->
           <section>
             <h2>Data Lakes</h2>
-            <h3>Pros:</h3>
-            <ul>
-              <li>
-                Scalable and cost-effective storage for raw and diverse data
-              </li>
-              <li>Supports both structured and unstructured data</li>
-              <li>Enables advanced analytics and data exploration</li>
-            </ul>
-            <h3>Cons:</h3>
-            <ul>
-              <li>Complex data governance and quality challenges</li>
-              <li>Data silos and lack of metadata management</li>
-              <li>Requires careful planning for effective utilization</li>
-            </ul>
+            <table>
+              <tr>
+                <th>Pros</th>
+                <th>Cons</th>
+              </tr>
+              <tr>
+                <td>Scalable and cost-effective storage for raw and diverse data</td>
+                <td>Complex data governance and quality challenges</td>
+              </tr>
+              <tr>
+                <td>Supports both structured and unstructured data</td>
+                <td>Data silos and lack of metadata management</td>
+              </tr>
+              <tr>
+                <td>Enables advanced analytics and data exploration</td>
+                <td>Requires careful planning for effective utilization</td>
+              </tr>
+            </table>
           </section>
-
+    
+          <!-- Continue adding slides for other database types -->
+    
           <!-- Slide 15: NewSQL Databases -->
-          <section>
-            <h2>NewSQL Databases</h2>
-            <h3>Pros:</h3>
-            <ul>
-              <li>Combines SQL benefits with horizontal scalability</li>
-              <li>Supports ACID transactions for high consistency</li>
-              <li>Performance improvements for modern workloads</li>
-            </ul>
-            <h3>Cons:</h3>
-            <ul>
-              <li>May not match the scalability of some NoSQL databases</li>
-              <li>Less established than traditional RDBMS</li>
-              <li>Adoption and ecosystem may vary by vendor</li>
-            </ul>
-          </section>
-
+          
+    
+          <!-- Continue adding slides for other database types -->
+    
           <!-- Slide 16: Data Virtualization -->
           <section>
             <h2>Data Virtualization</h2>
-            <h3>Pros:</h3>
-            <ul>
-              <li>Unified view of data from multiple sources</li>
-              <li>Minimizes data replication and redundancy</li>
-              <li>Supports real-time data access and integration</li>
-            </ul>
-            <h3>Cons:</h3>
-            <ul>
-              <li>Performance may be slower for complex queries</li>
-              <li>Dependency on source systems for data availability</li>
-              <li>May require data transformation for consistency</li>
-            </ul>
+            <table>
+              <tr>
+                <th>Pros</th>
+                <th>Cons</th>
+              </tr>
+              <tr>
+                <td>Unified view of data from multiple sources</td>
+                <td>Performance may be slower for complex queries</td>
+              </tr>
+              <tr>
+                <td>Minimizes data replication and redundancy</td>
+                <td>Dependency on source systems for data availability</td>
+              </tr>
+              <tr>
+                <td>Supports real-time data access and integration</td>
+                <td>May require data transformation for consistency</td>
+              </tr>
+            </table>
           </section>
-
+    
+          <!-- Continue adding slides for other database types -->
+    
           <!-- Slide 17: Cloud-based Data Warehouses -->
           <section>
             <h2>Cloud-based Data Warehouses</h2>
-            <h3>Pros:</h3>
-            <ul>
-              <li>Scalable, managed analytics platforms</li>
-              <li>Support for parallel processing and optimization</li>
-              <li>Integration with various data sources and tools</li>
-            </ul>
-            <h3>Cons:</h3>
-            <ul>
-              <li>Costs can escalate with increasing data and queries</li>
-              <li>Query performance may vary based on workload</li>
-              <li>
-                Complexity in managing data lake and warehouse integration
-              </li>
-            </ul>
+            <table>
+              <tr>
+                <th>Pros</th>
+                <th>Cons</th>
+              </tr>
+              <tr>
+                <td>Scalable, managed analytics platforms</td>
+                <td>Costs can escalate with increasing data and queries</td>
+              </tr>
+              <tr>
+                <td>Support for parallel processing and optimization</td>
+                <td>Query performance may vary based on workload</td>
+              </tr>
+              <tr>
+                <td>Integration with various data sources and tools</td>
+                <td>Complexity in managing data lake and warehouse integration</td>
+              </tr>
+            </table>
           </section>
-
+    
+          <!-- Continue adding slides for other database types -->
+    
           <!-- Slide 18: Distributed File Systems -->
           <section>
             <h2>Distributed File Systems</h2>
-            <h3>Pros:</h3>
-            <ul>
-              <li>Scalable and fault-tolerant storage</li>
-              <li>Efficient for data distribution and sharing</li>
-              <li>High throughput for data processing and analytics</li>
-            </ul>
-            <h3>Cons:</h3>
-            <ul>
-              <li>Complex setup and management for distributed environments</li>
-              <li>Latency in data access for remote locations</li>
-              <li>Requires redundancy and backup strategies</li>
-            </ul>
+            <table>
+              <tr>
+                <th>Pros</th>
+                <th>Cons</th>
+              </tr>
+              <tr>
+                <td>Scalable and fault-tolerant storage</td>
+                <td>Complex setup and management for distributed environments</td>
+              </tr>
+              <tr>
+                <td>Efficient for data distribution and sharing</td>
+                <td>Latency in data access for remote locations</td>
+              </tr>
+              <tr>
+                <td>High throughput for data processing and analytics</td>
+                <td>Requires redundancy and backup strategies</td>
+              </tr>
+            </table>
           </section>
-
+    
+          <!-- Continue adding slides for other database types -->
+    
           <!-- Slide 19: Streaming Data Platforms -->
           <section>
             <h2>Streaming Data Platforms</h2>
-            <h3>Pros:</h3>
-            <ul>
-              <li>Real-time data ingestion and processing</li>
-              <li>Supports event-driven architectures</li>
-              <li>Enables real-time analytics and alerts</li>
-            </ul>
-            <h3>Cons:</h3>
-            <ul>
-              <li>
-                Complexity in managing data streams and processing pipelines
-              </li>
-              <li>Resource-intensive for high-velocity data</li>
-              <li>Latency in data processing for some use cases</li>
-            </ul>
+            <table>
+              <tr>
+                <th>Pros</th>
+                <th>Cons</th>
+              </tr>
+              <tr>
+                <td>Real-time data ingestion and processing</td>
+                <td>Complexity in managing data streams and processing pipelines</td>
+              </tr>
+              
+              <tr>
+                <td>Supports event-driven architectures</td>
+                <td>Resource-intensive for high-velocity data</td>
+              </tr>
+              <tr>
+                <td>Enables real-time analytics and alerts</td>
+                <td>Latency in data processing for some use cases</td>
+              </tr>
+            </table>
           </section>
-
+    
+          <!-- Continue adding slides for other database types -->
+    
           <!-- Slide 20: Data Integration Platforms -->
           <section>
             <h2>Data Integration Platforms</h2>
-            <h3>Pros:</h3>
-            <ul>
-              <li>Efficient data movement and transformation</li>
-              <li>Supports ETL (Extract, Transform, Load) processes</li>
-              <li>Enables data synchronization and consolidation</li>
-            </ul>
-            <h3>Cons:</h3>
-            <ul>
-              <li>Complexity in handling data formats and source variations</li>
-              <li>Resource-intensive during data transformation</li>
-              <li>Requires ongoing maintenance and monitoring</li>
-            </ul>
+            <table>
+              <tr>
+                <th>Pros</th>
+                <th>Cons</th>
+              </tr>
+              <tr>
+                <td>Efficient data movement and transformation</td>
+                <td>Complexity in handling data formats and source variations</td>
+              </tr>
+              <tr>
+                <td>Supports ETL (Extract, Transform, Load) processes</td>
+                <td>Resource-intensive during data transformation</td>
+              </tr>
+              <tr>
+                <td>Enables data synchronization and consolidation</td>
+                <td>Requires ongoing maintenance and monitoring</td>
+              </tr>
+            </table>
           </section>
+    
         </section>
       </div>
     </div>
