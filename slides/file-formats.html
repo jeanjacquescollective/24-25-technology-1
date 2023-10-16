@@ -7,7 +7,7 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
 
-    <title>Machine Learning vs. Traditional Programming</title>
+    <title>File Formats</title>
 
     <link rel="stylesheet" href="../dist/reset.css" />
     <link rel="stylesheet" href="../dist/reveal.css" />
@@ -19,136 +19,258 @@
   </head>
   <body>
     <div class="reveal">
-        <div class="slides">
-            <!-- Title Slide -->
-            <section>
-                <h1>Common File Formats for Data Storage</h1>
-                <h3>Exploring Various Data Storage Formats</h3>
-            </section>
+      <div class="slides">
+        <section>
+          <section>
+            <h1>File formats</h1>
+          </section>
 
-            <!-- Slide 1 -->
-            <section>
-                <h2>Introduction</h2>
-                <p>Welcome to our presentation on common file formats for data storage. In the next 30 minutes, we will cover various data storage formats used in the industry.</p>
-            </section>
+          <!-- Dia 2: CSV -->
+          <section>
+            <h2>CSV</h2>
+            <ul>
+              <li>Comma Separated Values</li>
+              <li>tabulaire gegevens</li>
+              <li>platte tekst met komma's om waarden te scheiden</li>
+              <li>gebruikt in excel om gegevens te delen</li>
+            </ul>
+          </section>
+          <section>
+            <code>
+              <pre>
+                        Naam, Leeftijd, Stad
+                        Alice, 28, New York
+                        Bob, 32, Los Angeles
+                        Carol, 24, Chicago
+                        </pre
+              >
+            </code>
+          </section>
 
-            <!-- Slide 2: CSV -->
-            <section>
-                <h2>CSV - Comma Separated Values</h2>
-                <p>CSV is a widely used file format for storing tabular data. It consists of plain text where each line represents a row of data, and values are separated by commas.</p>
-            </section>
+          <section>
+            <img src="../assets/images/file-formats/csv.jpg" alt="" />
+          </section>
 
-            <!-- Slide 3: JSON -->
-            <section>
-                <h2>JSON - JavaScript Object Notation</h2>
-                <p>JSON is a popular format for data interchange. It uses a human-readable text format to represent data objects consisting of attribute-value pairs.</p>
-            </section>
+          <!-- Dia 3: JSON -->
+          <section>
+            <h2>JSON</h2>
+            <ul>
+              <li>JavaScript Object Notation</li>
+              <li>Populaire voor gegevensuitwisseling</li>
+              <li>tekst met attribuut-waarde paren</li>
+            </ul>
+          </section>
+          <section>
+            <code>
+              <pre>
+                        {
+                            "naam": "Alice",
+                            "leeftijd": 28,
+                            "stad": "New York"
+                        }
+                        {
+                            "naam": "Bob",
+                            "leeftijd": 32,
+                            "stad": "Los Angeles"
+                        }
+                        {
+                            "naam": "Carol",
+                            "leeftijd": 24,
+                            "stad": "Chicago"
+                        }
+                        </pre
+              >
+            </code>
+          </section>
+          <section>
+            <img src="../assets/images/file-formats/json.png" alt="" />
+          </section>
+          <!-- Dia 4: XML -->
+          <section>
+            <h2>XML</h2>
+            <ul>
+              <li>Extensible Markup Language</li>
+              <li>
+                Veelzijdige taal voor mens- en machineleesbare documenten.
+              </li>
+              <li>Gebruikt voor gegevensuitwisseling en configuratie.</li>
+            </ul>
+          </section>
+          <section>
+            <pre>
+                        <persoon>
+                            <naam>Alice</naam>
+                            <leeftijd>28</leeftijd>
+                            <stad>New York</stad>
+                        </persoon>
+                        <persoon>
+                            <naam>Bob</naam>
+                            <leeftijd>32</leeftijd>
+                            <stad>Los Angeles</stad>
+                        </persoon>
+                        <persoon>
+                            <naam>Carol</naam>
+                            <leeftijd>24</leeftijd>
+                            <stad>Chicago</stad>
+                        </persoon>
+                        </pre>
+          </section>
+          <section>
+            <img src="../assets/images/file-formats/xml.webp" alt="" />
+          </section>
+          <!-- Dia 5: YAML -->
+          <section>
+            <h2>YAML</h2>
+            <ul>
+              <li>YAML is not a Markup Language</li>
+              <li>
+                leesbare gegevensindeling voor configuratie en uitwisseling
+              </li>
+              <li>inspringing voor structuur</li>
+            </ul>
+          </section>
+          <section>
+            <pre>
+                        - naam: Alice
+                          leeftijd: 28
+                          stad: New York
+                        - naam: Bob
+                          leeftijd: 32
+                          stad: Los Angeles
+                        - naam: Carol
+                          leeftijd: 24
+                          stad: Chicago
+                        </pre
+            >
+          </section>
+          <section>
+            <img
+              src="../assets/images/file-formats/yaml-434829076.png"
+              alt=""
+            />
+          </section>
+          <!-- Dia 6: Excel -->
+          <section>
+            <h2>Excel Werkblad</h2>
+            <ul>
+              <li>XLSX-bestanden voor tabulaire gegevens en analyse.</li>
+              <li>Ondersteunt werkbladen, formules en opmaak.</li>
+            </ul>
+          </section>
+          <section>
+            <img
+              src="../assets//images/file-formats/new-business-excel-spreadsheet.jpg"
+              alt=""
+            />
+          </section>
 
-            <!-- Slide 4: XML -->
-            <section>
-                <h2>XML - Extensible Markup Language</h2>
-                <p>XML is a versatile markup language for encoding documents in a format that is both human-readable and machine-readable. It is often used for data interchange and configuration files.</p>
-            </section>
+          <!-- Dia 7: SQLite -->
+          <section>
+            <h2>SQLite Database</h2>
+            <ul>
+              <li>
+                Serverloze SQL-database voor ingebedde systemen en mobiele apps.
+              </li>
+            </ul>
+          </section>
+          <section>
+            <img src="../assets//images/file-formats/sqlite.png" alt="" />
+          </section>
 
-            <!-- Slide 5: YAML -->
-            <section>
-                <h2>YAML - YAML Ain't Markup Language</h2>
-                <p>YAML is a human-readable data serialization format often used for configuration files and data exchange between languages with different data structures. It uses indentation for nesting.</p>
-            </section>
+          <section>
+            <h2>Protobuf</h2>
+            <ul>
+              <li>Protocol Buffers</li>
+              <li>binair</li>
+              <li>gebruikt in Google</li>
+            </ul>
+          </section>
 
-            <!-- Slide 6: Excel -->
-            <section>
-                <h2>Excel Spreadsheet</h2>
-                <p>Excel files (XLSX) are commonly used for tabular data storage and analysis. They support multiple worksheets, formulas, and rich formatting options.</p>
-            </section>
+          <!-- Dia 15: MessagePack -->
+          <section>
+            <h2>MessagePack</h2>
+            <ul>
+              <li>Binaire serialisatie-indeling</li>
+              <li>goede prestaties en efficiëntie</li>
+              <li>
+                gegevensuitwisseling tussen systemen in verschillende talen
+              </li>
+            </ul>
+          </section>
+          <section>
+            <img
+              src="../assets//images/file-formats/messagepack-vs-json.png"
+              alt=""
+            />
+          </section>
 
-            <!-- Slide 7: SQLite -->
-            <section>
-                <h2>SQLite Database</h2>
-                <p>SQLite is a self-contained, serverless, and file-based SQL database engine. It is often used for embedded systems and mobile applications.</p>
-            </section>
+          <!-- Dia 8: Parquet -->
+          <section>
+            <h2>Parquet</h2>
+            <ul>
+              <li>Kolomsgewijze indeling</li>
+              <li>gebruikt in Hadoop en andere big data-tools.</li>
+              <li>Goed voor snel lezen data</li>
+            </ul>
+          </section>
+          <section>
+            <img src="../assets//images/file-formats/parquet.JPG" alt="" />
+          </section>
+          <section>
+            <img
+              src="../assets//images/file-formats/parquet-example.png"
+              alt=""
+            />
+          </section>
+          <!-- Dia 9: Avro -->
+          <section>
+            <h2>Avro</h2>
+            <ul>
+              <li>Gegevensserialisatieraamwerk</li>
+              <li>binaire indeling</li>
+              <li>Gebruikt in Hadoop en andere big data-tools.</li>
+              <li>Goed voor snel schrijven data</li>
+            </ul>
+          </section>
 
-            <!-- Slide 8: Parquet -->
-            <section>
-                <h2>Parquet</h2>
-                <p>Parquet is a columnar storage file format that is highly optimized for analytics workloads. It is commonly used in big data processing frameworks like Apache Spark.</p>
-            </section>
+          <section>
+            <img src="../assets/images/file-formats/avro-exapmle.png" alt="" />
+          </section>
+          <!-- Dia 10: ORC -->
+          <section>
+            <h2>ORC</h2>
+            <ul>
+              <li>Optimal Record Columnar</li>
+              <li>open-source</li>
+              <li>kolomsgewijs</li>
+              <li>Goed voor snel lezen data</li>
+            </ul>
+          </section>
+          <section>
+            <img
+              src="../assets//images/file-formats/orc_file_structure.png"
+              alt=""
+            />
+          </section>
+          <!-- Dia 11: HDF5 -->
+          <section>
+            <h2>HDF5</h2>
+            <ul>
+              <li>Hierarchical Data Format</li>
 
-            <!-- Slide 9: Avro -->
-            <section>
-                <h2>Avro</h2>
-                <p>Apache Avro is a data serialization framework that provides binary data format, efficient schema evolution, and support for complex data structures. It's used in Hadoop and other big data tools.</p>
-            </section>
-
-            <!-- Slide 10: ORC -->
-            <section>
-                <h2>ORC - Optimized Row Columnar</h2>
-                <p>ORC is another columnar storage file format designed for big data analytics. It is used in Apache Hive and Impala.</p>
-            </section>
-
-            <!-- Slide 11: HDF5 -->
-            <section>
-                <h2>HDF5 - Hierarchical Data Format 5</h2>
-                <p>HDF5 is a versatile file format for storing and managing large amounts of scientific data. It supports complex data structures and hierarchical organization.</p>
-            </section>
-
-            <!-- Slide 12: Apache Kafka -->
-            <section>
-                <h2>Apache Kafka</h2>
-                <p>Apache Kafka is a distributed streaming platform that uses a distributed commit log to store events. It is commonly used for real-time data streaming and processing.</p>
-            </section>
-
-            <!-- Slide 13: BSON -->
-            <section>
-                <h2>BSON - Binary JSON</h2>
-                <p>BSON is a binary-encoded serialization format used in MongoDB to store data in a compact and efficient manner.</p>
-            </section>
-
-            <!-- Slide 14: Apache Parquet -->
-            <section>
-                <h2>Apache Parquet</h2>
-                <p>Apache Parquet is an open-source columnar storage format that is well-suited for analytics workloads in big data environments. It is often used with tools like Apache Hive and Apache Impala.</p>
-            </section>
-
-            <!-- Slide 15: MessagePack -->
-            <section>
-                <h2>MessagePack</h2>
-                <p>MessagePack is a binary serialization format that is designed for high performance and efficiency. It is used in various programming languages and is suitable for data exchange between systems.</p>
-            </section>
-
-            <!-- Slide 16: Excel CSV -->
-            <section>
-                <h2>Excel CSV</h2>
-                <p>Excel can export data as CSV (Comma Separated Values) files, which can be useful for sharing data with others who may not have Excel installed.</p>
-            </section>
-
-            <!-- Slide 17: Apache Cassandra -->
-            <section>
-                <h2>Apache Cassandra</h2>
-                <p>Apache Cassandra is a distributed NoSQL database that uses a column-family storage model. It is designed for high availability and scalability.</p>
-            </section>
-
-            <!-- Slide 18: Parquet vs. ORC -->
-            <section>
-                <h2>Parquet vs. ORC</h2>
-                <p>Both Parquet and ORC are popular columnar storage formats. They offer similar benefits, but there are differences in terms of features and tool support. The choice between them depends on your specific use case.</p>
-            </section>
-
-            <!-- Slide 19: Conclusion -->
-            <section>
-                <h2>Conclusion</h2>
-                <p>These are just a few of the many file formats used for data storage in various domains. Choosing the right format depends on your application's requirements and the tools you're using for data processing and analysis.</p>
-            </section>
-
-            <!-- Slide 20: Q&A -->
-            <section>
-                <h2>Questions & Answers</h2>
-                <p>Thank you for your attention. Now, we will take any questions you may have.</p>
-            </section>
-
-            <!-- Add more slides as needed -->
-
-        </div>
+              <li>grote hoeveelheden wetenschappelijke gegevens</li>
+              <li>Ondersteunt complexe structuren en hiërarchieën</li>
+            </ul>
+          </section>
+          <section>
+            <img
+              src="../assets//images/file-formats/hdf5_structure4.jpg"
+              alt=""
+            />
+          </section>
+        </section>
+        <!-- Dia 1 -->
+      </div>
     </div>
 
     <script src="../dist/reveal.js"></script>
