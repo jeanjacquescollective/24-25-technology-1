@@ -176,7 +176,11 @@
           <section>
             <img src="../assets//images/file-formats/sqlite.png" alt="" />
           </section>
-
+        </section>
+        <section>
+          <section>
+            <h2>Binaire indelingen</h2>
+          </section>
           <section>
             <h2>Protobuf</h2>
             <ul>
@@ -198,6 +202,27 @@
             </ul>
           </section>
           <section>
+            <h2>Rij versus Kolomindelingen</h2>
+            <section>
+              <h3>Rijindeling</h3>
+              <ul>
+                <li>Traditionele organisatie per record</li>
+                <li>Schrijfintensief, eenvoudig toevoegen van gegevens</li>
+                <li>Efficiëntie voor leesbewerkingen is laag</li>
+              </ul>
+            </section>
+            <section>
+              <h3>Kolomindeling</h3>
+              <ul>
+                <li>Waarden van kolommen worden samen opgeslagen</li>
+                <li>
+                  Efficiënt voor leesbewerkingen, specifieke kolommen bevragen
+                </li>
+                <li>Ondersteunt efficiënte compressie en codering</li>
+              </ul>
+            </section>
+          </section>
+          <section>
             <img
               src="../assets//images/file-formats/messagepack-vs-json.png"
               alt=""
@@ -211,6 +236,9 @@
               <li>Kolomsgewijze indeling</li>
               <li>gebruikt in Hadoop en andere big data-tools.</li>
               <li>Goed voor snel lezen data</li>
+              <li>Analyses met eenmalig schrijven, vaak lezen</li>
+              <li>Ondersteunt complexe geneste gegevensstructuren</li>
+              <li>Zelfbeschrijvend met metadata</li>
             </ul>
           </section>
           <section>
@@ -226,7 +254,7 @@
           <section>
             <h2>Avro</h2>
             <ul>
-              <li>Gegevensserialisatieraamwerk</li>
+              <li>Rij-gebaseerd</li>
               <li>binaire indeling</li>
               <li>Gebruikt in Hadoop en andere big data-tools.</li>
               <li>Goed voor snel schrijven data</li>
@@ -244,6 +272,8 @@
               <li>open-source</li>
               <li>kolomsgewijs</li>
               <li>Goed voor snel lezen data</li>
+              <li>Ondersteunt ACID-transacties</li>
+              <li>Efficiënte compressie met Snappy en Zlib</li>
             </ul>
           </section>
           <section>
@@ -257,7 +287,6 @@
             <h2>HDF5</h2>
             <ul>
               <li>Hierarchical Data Format</li>
-
               <li>grote hoeveelheden wetenschappelijke gegevens</li>
               <li>Ondersteunt complexe structuren en hiërarchieën</li>
             </ul>
