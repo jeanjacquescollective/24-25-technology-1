@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>Machine Learning vs. Traditional Programming</title>
+
+    <link rel="stylesheet" href="../dist/reset.css" />
+    <link rel="stylesheet" href="../dist/reveal.css" />
+    <link rel="stylesheet" href="../dist/theme/black.css" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="../plugin/highlight/monokai.css" />
+    <link rel="stylesheet" href="../dist/main.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <!-- Slide 1 -->
+          <section>
+            <h1>Regressie en Classificatie in Machine Learning</h1>
+            <ul>
+              <li>
+                Datawetenschappers ontdekken patronen in big data met machine
+                learning-algoritmen.
+              </li>
+            </ul>
+          </section>
+
+          <!-- Slide 2 -->
+          <section>
+            <h2>Supervisie Machine Learning</h2>
+            <ul>
+              <li>Meerderheid van praktische ML-technieken</li>
+              <li>
+                Aan de hand van de invoer x de uitvoer Y voorspellen met de
+                functie f(X)
+              </li>
+              <li>
+                Technieken: lineaire regressie, logistieke regressie,
+                beslissingsbomen.
+              </li>
+              <li>Labels zijn belangrijk</li>
+            </ul>
+          </section>
+
+          <!-- Slide 3 -->
+          <section>
+            <h2>Verschillende soorten problemen</h2>
+            <ul>
+              <li>Classificatie: categorische afhankelijk kenmerk</li>
+              <li>Regressie: numeriek</li>
+            </ul>
+          </section>
+
+          <!-- Slide 4 -->
+          <section>
+            <h2>Regressie</h2>
+            <ul>
+              <li>uitvoervariabele een reële of continue waarde</li>
+              <li>
+                voorbeelden: voorspellen van de leeftijd van een persoon,
+                voorspellen van de nationaliteit van een persoon, voorspellen of
+                de aandelenprijs van een bedrijf morgen zal stijgen, voorspellen
+                of een document betrekking heeft op het waarnemen van UFO's
+              </li>
+            </ul>
+          </section>
+
+          <!-- Slide 5 -->
+          <section>
+            <h2>Typen Regressiemodellen</h2>
+            <p>Voorbeelden:</p>
+            <ul>
+              <li>Voorspellen van de leeftijd van een persoon</li>
+              <li>Voorspellen van de nationaliteit van een persoon</li>
+              <li>
+                Voorspellen of de aandelenprijs van een bedrijf morgen zal
+                stijgen
+              </li>
+              <li>
+                Voorspellen of een document betrekking heeft op het waarnemen
+                van UFO's
+              </li>
+            </ul>
+          </section>
+
+          <!-- Slide 6 -->
+          <section>
+            <h2>Python Code voor Lineaire Regressie</h2>
+            <pre><code class="python">
+# Python-code om regressie te illustreren
+import matplotlib 
+matplotlib.use('GTKAgg') 
+   
+import matplotlib.pyplot as plt 
+import numpy as np 
+from sklearn import datasets, linear_model 
+import pandas as pd 
+   
+# CSV en kolommen laden 
+df = pd.read_csv("Housing.csv") 
+   
+Y = df['prijs'] 
+X = df['kavelgrootte'] 
+   
+X=X.values.reshape(len(X),1) 
+Y=Y.values.reshape(len(Y),1) 
+   
+# De data splitsen in trainings-/testsets 
+X_train = X[:-250] 
+X_test = X[-250:] 
+   
+# De doelen splitsen in trainings-/testsets 
+Y_train = Y[:-250] 
+Y_test = Y[-250:] 
+   
+# Uitvoer weergeven 
+plt.scatter(X_test, Y_test,  color='zwart') 
+plt.title('Testgegevens') 
+plt.xlabel('Grootte') 
+plt.ylabel('Prijs') 
+plt.xticks(()) 
+plt.yticks(()) 
+   
+# Lineaire regressie-object maken 
+regr = linear_model.LinearRegression() 
+   
+# Het model trainen met de trainingsgegevens 
+regr.fit(X_train, Y_train) 
+   
+# Uitvoer weergeven 
+plt.plot(X_test, regr.predict(X_test), kleur='rood', lijnbreedte=3) 
+plt.show()
+        </code></pre>
+          </section>
+
+          <!-- Slide 7 -->
+          <section>
+            <h2>Classificatie</h2>
+            <ul>
+              <li>uitvoervariabele een categorie</li>
+              <li>
+                voorbeelden: voorspellen of een e-mail spam is of niet,
+                voorspellen of een tumor kwaadaardig is of niet, voorspellen of
+                een document betrekking heeft op het waarnemen van UFO's
+              </li>
+            </ul>
+          </section>
+
+          <!-- Slide 8 -->
+          <section>
+            <h2>Python Code voor Classificatie met RandomForestClassifier</h2>
+            <pre><code class="python">
+# Python-code om classificatie te illustreren met dataset
+import pandas as pd 
+from sklearn.model_selection import train_test_split 
+from sklearn.ensemble import RandomForestClassifier 
+from sklearn.preprocessing import LabelEncoder 
+from sklearn.metrics import confusion_matrix 
+from sklearn.metrics import accuracy_score 
+from sklearn.metrics import classification_report 
+  
+# Dataset importeren 
+dataset = pd.read_csv( 
+          'https://archive.ics.uci.edu/ml/machine-learning-'+
+          'databases/iris/iris.data',sep= ',', header= Geen) 
+data = dataset.iloc[:, :] 
+  
+# Controleren op null-waarden 
+print("Som van NULL-waarden in elke kolom. ") 
+print(data.isnull().sum()) 
+  
+# Voorspellende kolom scheiden van de hele dataset 
+X = data.iloc[:, :-1].waarden 
+y = dataset.iloc[:, 4].waarden 
+  
+# Voorspellende variabele coderen 
+labelencoder_y = LabelEncoder() 
+y = labelencoder_y.fit_transform(y) 
+  
+# Data splitsen in test- en trainingsdataset 
+X_train, X_test, y_train, y_test = train_test_split( 
+              X, y, test_size = 0.3, random_state = 0) 
+  
+# Random forest classifier gebruiken voor de voorspelling 
+classifier=RandomForestClassifier() 
+classifier=classifier.fit(X_train,y_train) 
+voorspeld=classifier.predict(X_test) 
+  
+# Resultaten afdrukken 
+print ('Confusion Matrix :') 
+print(confusion_matrix(y_test, voorspeld)) 
+print ('Nauwkeurigheidsscore :',accuracy_score(y_test, voorspeld)) 
+print ('Rapport : ') 
+print (classification_report(y_test, voorspeld)) 
+        </code></pre>
+          </section>
+
+          <!-- Slide 9 -->
+          <section>
+            <h2>Referenties</h2>
+            <ul>
+              <li>
+                <a
+                  href="https://machinelearningmastery.com/logistic-regression-for-machine-learning/"
+                  target="_blank"
+                  >Logistieke Regressie voor Machine Learning</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://machinelearningmastery.com/linear-regression-for-machine-learning/"
+                  target="_blank"
+                  >Lineaire Regressie voor Machine Learning</a
+                >
+              </li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <!-- Slide 1 -->
+          <section>
+            <h1>Logistieke Regressie</h1>
+            <ul>
+              <li>classificatietaken</li>
+              <li>Voorspellen van de waarschijnlijkheid</li>
+              <li>
+                Statistisch algoritme dat de relatie analyseert tussen
+                onafhankelijke en afhankelijke binaire variabelen
+              </li>
+              <li>bijvoorbeeld e-mails spam of niet spam</li>
+            </ul>
+          </section>
+
+          <!-- Slide 3 -->
+          <section>
+            <ul>
+              <li>
+                Voorspelt categorische variabelen met onafhankelijke variabelen.
+              </li>
+              <li>Binair resultaat: Ja/Nee, 0/1.</li>
+              <li>
+                Vergelijkbaar met lineaire regressie, maar met S-vormige
+                logistieke functie.
+              </li>
+              <li>
+                Logistieke functiecurve geeft waarschijnlijkheid weer,
+                bijvoorbeeld voor kankercellen.
+              </li>
+              <li>
+                Belangrijk voor waarschijnlijkheden en classificatie van nieuwe
+                gegevens.
+              </li>
+              <li>Geschikt voor classificatie met diverse gegevenstypen.</li>
+            </ul>
+          </section>
+
+          <!-- Slide 4 -->
+          <section>
+            <h2>Logistieke Functie (Sigmoid Functie)</h2>
+            <ul>
+              <li>
+                Wiskundige functie om voorspelde waarden naar
+                waarschijnlijkheden te mappen
+              </li>
+              <li>Mapt echte waarde naar een waarde tussen 0 en 1</li>
+              <li>Wordt gebruikt om log-odds te berekenen</li>
+              <li>Bekend als de sigmoid functie</li>
+            </ul>
+          </section>
+
+          <!-- Slide 5 -->
+          <section>
+            <h2>Soorten Logistieke Regressie</h2>
+            <ul>
+              <li>
+                Binomiaal: Slechts twee mogelijke typen afhankelijke variabelen
+              </li>
+              <li>
+                Multinomiaal: Drie of meer mogelijke ongeordende typen
+                afhankelijke variabele
+              </li>
+              <li>
+                Ordinaal: Drie of meer mogelijke geordende typen afhankelijke
+                variabelen
+              </li>
+            </ul>
+          </section>
+
+          <!-- Slide 6 -->
+          <section>
+            <table style="font-size: 0.75em">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Lineaire Regressie</th>
+                  <th>Logistieke Regressie</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Voorspelt continue afhankelijke variabele</td>
+                  <td>Voorspelt categorische afhankelijke variabele</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Gebruikt voor het oplossen van regressieproblemen</td>
+                  <td>Gebruikt voor het oplossen van classificatieproblemen</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>De uitvoer is de gemiddelde waarde van de gegevens</td>
+                  <td>
+                    De uitvoer is de waarschijnlijkheid van een gebeurtenis
+                  </td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Gebruikt Least Square Estimation (LSE)</td>
+                  <td>Gebruikt Maximum Likelihood Estimation (MLE)</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Gebruikt gewone kleinste kwadratenmethode</td>
+                  <td>Gebruikt iteratieve herweging</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+
+          <!-- Slide 7 -->
+          <section>
+            <h2>Termen in Logistieke Regressie</h2>
+            <ul>
+              <li>
+                Onafhankelijke variabelen: Voorspellende kenmerken of
+                voorspellers toegepast op de afhankelijke variabele
+              </li>
+              <li>
+                Afhankelijke variabele: Het doelvariabele in een logistiek
+                regressiemodel dat we proberen te voorspellen
+              </li>
+              <li>
+                Logistieke functie: Formule die wordt gebruikt om te laten zien
+                hoe de onafhankelijke en afhankelijke variabelen met elkaar
+                samenhangen
+              </li>
+              <li>
+                Odds: Verhouding van iets dat plaatsvindt tot iets dat niet
+                plaatsvindt
+              </li>
+              <li>Log-odds: De natuurlijke logaritme van de odds</li>
+              <li>
+                Coefficiënt: Geschatte parameters van het logistieke
+                regressiemodel die laten zien hoe de onafhankelijke en
+                afhankelijke variabelen met elkaar samenhangen
+              </li>
+              <li>
+                Intercept: Een constant term in het logistieke regressiemodel
+                die de log-odds vertegenwoordigt wanneer alle onafhankelijke
+                variabelen gelijk zijn aan nul
+              </li>
+              <li>
+                Maximum Likelihood Estimation: Methode gebruikt om de
+                coëfficiënten van het logistieke regressiemodel te schatten
+              </li>
+            </ul>
+          </section>
+
+          <!-- Slide 11 -->
+          <section>
+            <h2>Assumpties voor Logistieke Regressie</h2>
+            <ul>
+              <li>Onafhankelijke waarnemingen</li>
+              <li>Binair afhankelijke variabelen</li>
+              <li>
+                Lineaire relatie tussen onafhankelijke variabelen en log-odds
+              </li>
+              <li>Geen uitschieters in de dataset</li>
+              <li>Grote steekproefgrootte</li>
+            </ul>
+          </section>
+
+          <!-- Slide 12 -->
+          <section>
+            <h2>Soorten Logistieke Regressie</h2>
+            <ul>
+              <li>
+                Binomiaal: Slechts twee mogelijke typen afhankelijke variabelen
+                (bijvoorbeeld "0" of "1")
+              </li>
+              <li>
+                Multinomiaal: Drie of meer mogelijke ongeordende typen
+                afhankelijke variabele (bijvoorbeeld "kat", "hond", "schaap")
+              </li>
+              <li>
+                Ordinaal: Drie of meer mogelijke geordende typen afhankelijke
+                variabelen (bijvoorbeeld "laag", "Gemiddeld", "Hoog")
+              </li>
+            </ul>
+          </section>
+
+          <!-- Slide 13 -->
+          <section>
+            <h2>Stappen in Logistieke Regressiemodeling</h2>
+            <ol>
+              <li>Definieer het probleem</li>
+              <li>Data voorbereiding</li>
+              <li>Exploratory Data Analysis (EDA)</li>
+              <li>Feature Selectie</li>
+              <li>Model Bouwen</li>
+              <li>Model Evaluatie</li>
+              <li>Model Verbetering</li>
+              <li>Model Implementatie</li>
+            </ol>
+          </section>
+
+          <!-- Slide 14 -->
+          <section>
+            <h2>Thresholding in Logistieke Regressie</h2>
+            <ul>
+              <li>
+                Lage Precisie/Hoge Recall: drempelwaarde met lage
+                precisie of hoge recall > aantal valse negatieven
+                verminderen
+              </li>
+              <li>
+                Hoge Precisie/Lage Recall: drempelwaarde met hoge
+                precisie of lage recall > aantal valse positieven
+                verminderen
+              </li>
+            </ul>
+          </section>
+        </section>
+      </div>
+    </div>
+    <script src="https://unpkg.com/reveal.js@4.1.0/dist/reveal.js"></script>
+    <script>
+      Reveal.initialize();
+    </script>
+  </body>
+</html>

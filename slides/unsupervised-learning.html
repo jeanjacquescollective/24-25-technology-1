@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>Machine Learning vs. Traditional Programming</title>
+
+    <link rel="stylesheet" href="../dist/reset.css" />
+    <link rel="stylesheet" href="../dist/reveal.css" />
+    <link rel="stylesheet" href="../dist/theme/black.css" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="../plugin/highlight/monokai.css" />
+    <link rel="stylesheet" href="../dist/main.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <!-- Slide 1 -->
+          <section>
+            <h1>Hierarchical vs K-Means Clustering</h1>
+            <p>Understanding key differences in clustering techniques.</p>
+          </section>
+
+          <!-- Slide 2 -->
+          <section>
+            <h2>Key Takeaways</h2>
+            <ul>
+              <li>
+                Hierarchical Clustering creates a hierarchy; K-Means creates a
+                fixed number of clusters.
+              </li>
+              <li>
+                Hierarchical is suitable for small datasets; K-Means is suitable
+                for large datasets.
+              </li>
+              <li>Choice depends on dataset nature and analysis goal.</li>
+            </ul>
+          </section>
+
+          <!-- Slide 3 -->
+          <section>
+            <h2>Introduction to Clustering</h2>
+            <p>
+              Clustering groups similar data points; used in data analysis,
+              image processing, and more.
+            </p>
+            <p>
+              Objective: Identify groups of objects that are similar within and
+              dissimilar between groups.
+            </p>
+          </section>
+
+          <!-- Slide 4 -->
+          <section>
+            <h2>Hierarchical Clustering</h2>
+            <p>
+              Builds a hierarchy of clusters; used when the number of clusters
+              is unknown.
+            </p>
+            <p>
+              Starts with each point as a cluster, merges closest pairs until
+              all points belong to one cluster.
+            </p>
+          </section>
+
+          <!-- Slide 5 -->
+          <section>
+            <h2>K-Means Clustering</h2>
+            <p>
+              Partitioning method; divides data into k clusters based on mean
+              proximity.
+            </p>
+            <p>
+              Fast and efficient, suitable for large datasets; assumes spherical
+              clusters and sensitive to outliers.
+            </p>
+          </section>
+
+          <!-- Slide 6 -->
+          <section>
+            <h2>Key Differences</h2>
+            <ul>
+              <li>
+                Hierarchical: Agglomerative or divisive; K-Means: Partitional.
+              </li>
+              <li>
+                Hierarchical: Determines clusters from dendrogram; K-Means: User
+                specifies cluster number.
+              </li>
+              <li>
+                Hierarchical: Handles non-convex shapes; K-Means: Assumes
+                spherical clusters.
+              </li>
+            </ul>
+          </section>
+
+          <!-- Slide 7 -->
+          <section>
+            <h2>Use Cases</h2>
+            <p>
+              Hierarchical: Large datasets, natural groupings; K-Means:
+              Classification, prediction, compression.
+            </p>
+          </section>
+
+          <!-- Slide 8 -->
+          <section>
+            <h2>Centroids and Distance</h2>
+            <p>
+              K-Means: Uses centroids to minimize distances; Hierarchical: No
+              centroids, hierarchical structure.
+            </p>
+          </section>
+
+          <!-- Slide 9 -->
+          <section>
+            <h2>Advantages and Disadvantages</h2>
+            <p>
+              <strong>Hierarchical:</strong> Easy interpretation, no fixed
+              clusters, visual representation.
+            </p>
+            <p>
+              <strong>K-Means:</strong> Fast, efficient, tight clusters,
+              suitable for large datasets.
+            </p>
+            <p>
+              Consider trade-offs in computational complexity, sensitivity to
+              outliers, and dataset characteristics.
+            </p>
+          </section>
+
+          <!-- Slide 10 -->
+          <section>
+            <h2>Application of Clustering</h2>
+            <p>
+              In business, marketing, exploratory data analysis, and predictive
+              modeling.
+            </p>
+            <p>
+              Identify customer segments, explore data patterns, and predict
+              future behavior.
+            </p>
+          </section>
+
+          <!-- Slide 11 -->
+          <section>
+            <h2>Other Clustering Methods</h2>
+            <p>
+              <strong>DBSCAN:</strong> Density-based, handles arbitrary-shaped
+              clusters.
+            </p>
+            <p>
+              <strong>Factoextra:</strong> Visualizes clustering results, useful
+              for high-dimensional data.
+            </p>
+          </section>
+
+          <!-- Slide 12 -->
+          <section>
+            <h2>Conclusion</h2>
+            <p>
+              Choose clustering method based on analysis needs and dataset
+              characteristics.
+            </p>
+            <p>
+              Both Hierarchical and K-Means Clustering have unique strengths and
+              applications.
+            </p>
+          </section>
+          <section>
+            <h2>Summary</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Feature</th>
+                  <th>Hierarchical Clustering</th>
+                  <th>K-Means Clustering</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Type of clustering</td>
+                  <td>Agglomerative (bottom-up) or divisive (top-down)</td>
+                  <td>Partitional (centroid-based)</td>
+                </tr>
+                <tr>
+                  <td>Number of clusters</td>
+                  <td>
+                    Can be determined by the dendrogram or chosen by the user
+                  </td>
+                  <td>Must be specified by the user</td>
+                </tr>
+                <tr>
+                  <td>Cluster shape</td>
+                  <td>
+                    Can handle non-convex shapes and variable cluster sizes
+                  </td>
+                  <td>Assumes spherical and equally sized clusters</td>
+                </tr>
+                <tr>
+                  <td>Distance metric</td>
+                  <td>
+                    Can use various distance measures, such as Euclidean,
+                    Manhattan, or cosine
+                  </td>
+                  <td>Must use Euclidean distance</td>
+                </tr>
+                <tr>
+                  <td>Scalability</td>
+                  <td>
+                    Can be computationally expensive for large datasets or many
+                    clusters
+                  </td>
+                  <td>
+                    Can handle large datasets and many clusters efficiently
+                  </td>
+                </tr>
+                <tr>
+                  <td>Interpretability</td>
+                  <td>
+                    Provides a hierarchical structure and dendrogram that can
+                    help in interpreting the clustering results
+                  </td>
+                  <td>
+                    Provides cluster centers and assignments, but no
+                    hierarchical structure
+                  </td>
+                </tr>
+                <tr>
+                  <td>Robustness to outliers</td>
+                  <td>
+                    Can handle outliers and noise, but may merge them into
+                    existing clusters
+                  </td>
+                  <td>
+                    Sensitive to outliers and noise, which can affect the
+                    cluster centers
+                  </td>
+                </tr>
+                <tr>
+                  <td>Applications</td>
+                  <td>
+                    Useful for exploratory analysis, finding natural groupings,
+                    and visualizing data
+                  </td>
+                  <td>
+                    Useful for classification, prediction, and data compression
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </section>
+      </div>
+    </div>
+
+    <script src="../dist/reveal.js"></script>
+    <script src="../plugin/notes/notes.js"></script>
+    <script src="../plugin/markdown/markdown.js"></script>
+    <script src="../plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
+</html>
