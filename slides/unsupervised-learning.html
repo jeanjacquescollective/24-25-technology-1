@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
   <head>
     <meta charset="utf-8" />
     <meta
@@ -7,13 +7,13 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
 
-    <title>Machine Learning vs. Traditional Programming</title>
+    <title>Machine Learning vs. Traditioneel Programmeren</title>
 
     <link rel="stylesheet" href="../dist/reset.css" />
     <link rel="stylesheet" href="../dist/reveal.css" />
     <link rel="stylesheet" href="../dist/theme/black.css" />
 
-    <!-- Theme used for syntax highlighted code -->
+    <!-- Thema gebruikt voor syntax-highlighted code -->
     <link rel="stylesheet" href="../plugin/highlight/monokai.css" />
     <link rel="stylesheet" href="../dist/main.css" />
   </head>
@@ -21,236 +21,255 @@
     <div class="reveal">
       <div class="slides">
         <section>
-          <!-- Slide 1 -->
+          <!-- Dia 1 -->
           <section>
-            <h1>Hierarchical vs K-Means Clustering</h1>
-            <p>Understanding key differences in clustering techniques.</p>
+            <h1>Hiërarchische vs K-Means Clustering</h1>
+            <p>Begrijp de belangrijkste verschillen in clusteringtechnieken.</p>
           </section>
 
-          <!-- Slide 2 -->
+          <!-- Dia 2 -->
           <section>
-            <h2>Key Takeaways</h2>
+            <h2>Belangrijkste punten</h2>
             <ul>
               <li>
-                Hierarchical Clustering creates a hierarchy; K-Means creates a
-                fixed number of clusters.
+                Hiërarchische clustering creëert een hiërarchie; K-Means creëert
+                een vast aantal clusters.
               </li>
               <li>
-                Hierarchical is suitable for small datasets; K-Means is suitable
-                for large datasets.
+                Hiërarchische clustering is geschikt voor kleine datasets;
+                K-Means is geschikt voor grote datasets.
               </li>
-              <li>Choice depends on dataset nature and analysis goal.</li>
+              <li>
+                De keuze hangt af van de aard van de dataset en het doel van de
+                analyse.
+              </li>
             </ul>
           </section>
 
-          <!-- Slide 3 -->
+          <!-- Dia 3 -->
           <section>
-            <h2>Introduction to Clustering</h2>
+            <h2>Inleiding tot Clustering</h2>
             <p>
-              Clustering groups similar data points; used in data analysis,
-              image processing, and more.
+              Clustering groepeert vergelijkbare datapunten; wordt gebruikt in
+              gegevensanalyse, beeldverwerking en meer.
             </p>
             <p>
-              Objective: Identify groups of objects that are similar within and
-              dissimilar between groups.
+              Doel: Identificeer groepen objecten die binnen groepen
+              vergelijkbaar zijn en tussen groepen verschillend.
             </p>
           </section>
 
-          <!-- Slide 4 -->
+          <!-- Dia 4 -->
           <section>
-            <h2>Hierarchical Clustering</h2>
+            <h2>Hiërarchische Clustering</h2>
             <p>
-              Builds a hierarchy of clusters; used when the number of clusters
-              is unknown.
+              Bouwt een hiërarchie van clusters op; wordt gebruikt wanneer het
+              aantal clusters onbekend is.
             </p>
             <p>
-              Starts with each point as a cluster, merges closest pairs until
-              all points belong to one cluster.
+              Begint met elk punt als een cluster, voegt de dichtstbijzijnde
+              paren samen totdat alle punten tot één cluster behoren.
             </p>
           </section>
 
-          <!-- Slide 5 -->
+          <!-- Dia 5 -->
           <section>
             <h2>K-Means Clustering</h2>
             <p>
-              Partitioning method; divides data into k clusters based on mean
-              proximity.
+              Partitiemethode; verdeelt gegevens in k clusters op basis van
+              gemiddelde nabijheid.
             </p>
             <p>
-              Fast and efficient, suitable for large datasets; assumes spherical
-              clusters and sensitive to outliers.
+              Snel en efficiënt, geschikt voor grote datasets; gaat uit van
+              sferische clusters en is gevoelig voor uitschieters.
             </p>
           </section>
 
-          <!-- Slide 6 -->
+          <!-- Dia 6 -->
           <section>
-            <h2>Key Differences</h2>
+            <h2>Belangrijkste verschillen</h2>
             <ul>
               <li>
-                Hierarchical: Agglomerative or divisive; K-Means: Partitional.
+                Hiërarchisch: Agglomeratief of divisief; K-Means: Partitief.
               </li>
               <li>
-                Hierarchical: Determines clusters from dendrogram; K-Means: User
-                specifies cluster number.
+                Hiërarchisch: Bepaalt clusters vanuit dendrogram; K-Means:
+                Gebruiker geeft het aantal clusters op.
               </li>
               <li>
-                Hierarchical: Handles non-convex shapes; K-Means: Assumes
-                spherical clusters.
+                Hiërarchisch: Handelt niet-convexe vormen af; K-Means: Gaat uit
+                van sferische clusters.
               </li>
             </ul>
           </section>
 
-          <!-- Slide 7 -->
+          <!-- Dia 7 -->
           <section>
-            <h2>Use Cases</h2>
+            <h2>Toepassingen</h2>
             <p>
-              Hierarchical: Large datasets, natural groupings; K-Means:
-              Classification, prediction, compression.
+              Hiërarchisch: Grote datasets, natuurlijke groeperingen; K-Means:
+              Classificatie, voorspelling, compressie.
             </p>
           </section>
 
-          <!-- Slide 8 -->
+          <!-- Dia 8 -->
           <section>
-            <h2>Centroids and Distance</h2>
+            <h2>Centroids en Afstand</h2>
             <p>
-              K-Means: Uses centroids to minimize distances; Hierarchical: No
-              centroids, hierarchical structure.
+              K-Means: Gebruikt centroids om afstanden te minimaliseren;
+              Hiërarchisch: Geen centroids, hiërarchische structuur.
             </p>
           </section>
 
-          <!-- Slide 9 -->
+          <!-- Dia 9 -->
           <section>
-            <h2>Advantages and Disadvantages</h2>
+            <h2>Voor- en nadelen</h2>
             <p>
-              <strong>Hierarchical:</strong> Easy interpretation, no fixed
-              clusters, visual representation.
+              <strong>Hiërarchisch:</strong> Makkelijk te interpreteren, geen
+              vaste clusters, visuele representatie.
             </p>
             <p>
-              <strong>K-Means:</strong> Fast, efficient, tight clusters,
-              suitable for large datasets.
+              <strong>K-Means:</strong> Snel, efficiënt, strakke clusters,
+              geschikt voor grote datasets.
             </p>
             <p>
-              Consider trade-offs in computational complexity, sensitivity to
-              outliers, and dataset characteristics.
+              Overweeg afwegingen in rekenkundige complexiteit, gevoeligheid
+              voor uitschieters en datasetkenmerken.
             </p>
           </section>
 
-          <!-- Slide 10 -->
+          <!-- Dia 10 -->
           <section>
-            <h2>Application of Clustering</h2>
+            <h2>Toepassing van Clustering</h2>
             <p>
-              In business, marketing, exploratory data analysis, and predictive
-              modeling.
+              In bedrijf, marketing, verkennende gegevensanalyse en
+              voorspellende modellering.
             </p>
             <p>
-              Identify customer segments, explore data patterns, and predict
-              future behavior.
+              Identificeer klantsegmenten, verken datapatronen en voorspel
+              toekomstig gedrag.
             </p>
           </section>
 
-          <!-- Slide 11 -->
+          <!-- Dia 11 -->
           <section>
-            <h2>Other Clustering Methods</h2>
+            <h2>Andere Clusteringmethoden</h2>
             <p>
-              <strong>DBSCAN:</strong> Density-based, handles arbitrary-shaped
-              clusters.
+              <strong>DBSCAN:</strong> Dichtheidsgebaseerd, behandelt clusters
+              van willekeurige vormen.
             </p>
             <p>
-              <strong>Factoextra:</strong> Visualizes clustering results, useful
-              for high-dimensional data.
+              <strong>Factoextra:</strong> Visualiseert clusteringresultaten,
+              handig voor gegevens met veel dimensies.
             </p>
           </section>
 
-          <!-- Slide 12 -->
+          <!-- Dia 12 -->
           <section>
-            <h2>Conclusion</h2>
+            <h2>Conclusie</h2>
             <p>
-              Choose clustering method based on analysis needs and dataset
-              characteristics.
+              Kies een clusteringmethode op basis van analysebehoeften en
+              datasetkenmerken.
             </p>
             <p>
-              Both Hierarchical and K-Means Clustering have unique strengths and
-              applications.
+              Zowel hiërarchische als K-Means clustering hebben unieke sterke
+              punten en toepassingen.
             </p>
           </section>
           <section>
-            <h2>Summary</h2>
-            <table>
+            <h2>Samenvatting</h2>
+            <table style="font-size: 0.5em">
               <thead>
                 <tr>
-                  <th>Feature</th>
-                  <th>Hierarchical Clustering</th>
+                  <th>Kenmerk</th>
+                  <th>Hiërarchische Clustering</th>
                   <th>K-Means Clustering</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>Type of clustering</td>
-                  <td>Agglomerative (bottom-up) or divisive (top-down)</td>
-                  <td>Partitional (centroid-based)</td>
+                  <td>Soort clustering</td>
+                  <td>Agglomeratief (bottom-up) of divisief (top-down)</td>
+                  <td>Partitief (centroid-gebaseerd)</td>
                 </tr>
                 <tr>
-                  <td>Number of clusters</td>
+                  <td>Aantal clusters</td>
                   <td>
-                    Can be determined by the dendrogram or chosen by the user
+                    Kan worden bepaald door de dendrogram of gekozen door de
+                    gebruiker
                   </td>
-                  <td>Must be specified by the user</td>
+                  <td>Moet worden gespecificeerd door de gebruiker</td>
                 </tr>
+              </tbody>
+            </table>
+          </section>
+          <section>
+            <table style="font-size: 0.5em">
+              <thead>
                 <tr>
-                  <td>Cluster shape</td>
+                  <th>Kenmerk</th>
+                  <th>Hiërarchische Clustering</th>
+                  <th>K-Means Clustering</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Cluster vorm</td>
                   <td>
-                    Can handle non-convex shapes and variable cluster sizes
+                    Kan omgaan met niet-convexe vormen en variabele
+                    clusterformaten
                   </td>
-                  <td>Assumes spherical and equally sized clusters</td>
+                  <td>Gaat uit van sferische en even grote clusters</td>
                 </tr>
                 <tr>
-                  <td>Distance metric</td>
+                  <td>Afstandsmaat</td>
                   <td>
-                    Can use various distance measures, such as Euclidean,
-                    Manhattan, or cosine
+                    Kan verschillende afstandsmaatregelen gebruiken, zoals
+                    Euclidisch, Manhattan of cosinus
                   </td>
-                  <td>Must use Euclidean distance</td>
+                  <td>Moet de Euclidische afstand gebruiken</td>
                 </tr>
                 <tr>
-                  <td>Scalability</td>
+                  <td>Schaalbaarheid</td>
                   <td>
-                    Can be computationally expensive for large datasets or many
+                    Kan rekenkundig duur zijn voor grote datasets of veel
                     clusters
                   </td>
                   <td>
-                    Can handle large datasets and many clusters efficiently
+                    Kan grote datasets en veel clusters efficiënt verwerken
                   </td>
                 </tr>
                 <tr>
-                  <td>Interpretability</td>
+                  <td>Interpreteerbaarheid</td>
                   <td>
-                    Provides a hierarchical structure and dendrogram that can
-                    help in interpreting the clustering results
+                    Biedt een hiërarchische structuur en dendrogram die kunnen
+                    helpen bij het interpreteren van de clusteringresultaten
                   </td>
                   <td>
-                    Provides cluster centers and assignments, but no
-                    hierarchical structure
-                  </td>
-                </tr>
-                <tr>
-                  <td>Robustness to outliers</td>
-                  <td>
-                    Can handle outliers and noise, but may merge them into
-                    existing clusters
-                  </td>
-                  <td>
-                    Sensitive to outliers and noise, which can affect the
-                    cluster centers
+                    Biedt clustercentra en toewijzingen, maar geen hiërarchische
+                    structuur
                   </td>
                 </tr>
                 <tr>
-                  <td>Applications</td>
+                  <td>Robuustheid tegen uitschieters</td>
                   <td>
-                    Useful for exploratory analysis, finding natural groupings,
-                    and visualizing data
+                    Kan omgaan met uitschieters en ruis, maar kan ze samenvoegen
+                    met bestaande clusters
                   </td>
                   <td>
-                    Useful for classification, prediction, and data compression
+                    Gevoelig voor uitschieters en ruis, wat de clustercentra kan
+                    beïnvloeden
+                  </td>
+                </tr>
+                <tr>
+                  <td>Toepassingen</td>
+                  <td>
+                    Nuttig voor verkennende analyse, het vinden van natuurlijke
+                    groeperingen en het visualiseren van gegevens
+                  </td>
+                  <td>
+                    Nuttig voor classificatie, voorspelling en
+                    gegevenscompressie
                   </td>
                 </tr>
               </tbody>
@@ -265,13 +284,13 @@
     <script src="../plugin/markdown/markdown.js"></script>
     <script src="../plugin/highlight/highlight.js"></script>
     <script>
-      // More info about initialization & config:
+      // Meer informatie over initialisatie & configuratie:
       // - https://revealjs.com/initialization/
       // - https://revealjs.com/config/
       Reveal.initialize({
         hash: true,
 
-        // Learn about plugins: https://revealjs.com/plugins/
+        // Leer over plugins: https://revealjs.com/plugins/
         plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
       });
     </script>
