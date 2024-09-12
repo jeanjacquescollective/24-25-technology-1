@@ -1,4 +1,4 @@
-let languages = ['NL', 'EN']; // Replace with your desired languages
+let languages = ['EN', 'NL']; // Replace with your desired languages
 let currentLanguageIndex = 0;
 const dutchElements =  document.querySelectorAll('[language="nl"]');
 const englishElements =  document.querySelectorAll('[language="en"]');

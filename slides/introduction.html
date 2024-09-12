@@ -15,8 +15,13 @@
     <!-- Theme used for syntax highlighted code -->
     <link rel="stylesheet" href="../plugin/highlight/monokai.css" />
     <link rel="stylesheet" href="../dist/theme/custom.css" />
+    <link rel="stylesheet" href="../dist/main.css" />
+
   </head>
   <body>
+    <button class="language-button" onclick="toggleLanguage()">
+      Toggle Language
+    </button>
     <div class="reveal">
       <div class="slides">
         <section>
@@ -29,13 +34,21 @@
           </section>
           <!-- Slide 2: Introduction -->
           <section>
-            <img class="side-image" src="../assets/images/introduction/meme-ai.jpeg" alt="">
+            <img class="side-image" src="../assets/images/introduction/meme-ai.jpeg" alt="" >
             <h2>Welke vormen van AI kennen we al?</h2>
           </section>
+          <section data-background-image="../assets/images/introduction/spam-filter.png" data-background-size="contain"></section>
+          <section data-background-image="../assets/images/introduction/not-a-robot.png" data-background-size="contain">
+          </section>
+          <section data-background-image="../assets/images/introduction/recaptcha.jpeg" data-background-size="contain">
+          </section>
+          <section data-background-image="../assets/images/introduction/husky.png" data-background-size="contain">
+          </section>
+        </section>
+        <section>
           <section data-background-image="../assets/images/introduction/sauron.gif" data-background-opacity=".5">
-            <h2>Cursusoverzicht</h2>
-            <p>Basisprincipes van Kunstmatige Intelligentie (AI).</p>
-            <p>Definities van AI verkennen en de betekenis ervan bespreken.</p>
+            <h2>John McCarthy, 1955​</h2>
+            <p>Een machine zich zo laten gedragen dat we dat intelligent gedrag zouden noemen als een mens zich zo gedroeg.​</p>
           </section>
     
           <!-- Slide 3: Wat is AI? -->
@@ -46,6 +59,25 @@
             <p>Deze taken omvatten leren, redeneren, probleemoplossing, perceptie en taalbegrip.</p>
              </aside>
           </section>
+
+
+          <section>
+            <h2>Nieuw?</h2>
+            <p>
+                <ul>
+                    <li>1950</li>
+                    <li>Alan Turing</li>
+                    <li>Turing Test</li>
+                </ul>
+            </p>
+            <a href="https://humanornot.so/">https://humanornot.so/</a>
+          </section>
+
+          <section>
+            <h2>Natural Intelligence</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/qP1hJLepOhw?si=ierLCZgXPTRIFl2V" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </section>
+
           <!-- Slide 4: Waarom AI Belangrijk is -->
           <section >
             <h2>Belang</h2>
@@ -61,50 +93,449 @@
     
           <!-- Slide 5: Cursusdoelen -->
           <section data-background-image="../assets/images/introduction/gloas.jpeg" data-background-opacity=".5">
-            <h2>Cursusdoelen</h2>
+            <h2>Types AI</h2>
             <ul>
-              <li>Kernconcepten en definities van AI begrijpen.</li>
-              <li>Rreal-world toepassingen van AI in verschillende industrieën verkennen.</li>
-              <li>Ethische en maatschappelijke implicaties van AI bespreken.</li>
-              <li>Hands-on ervaring met AI-tools en technologieën.</li>
-              <li>ML modellen maken.</li>
+              <li>Artificial Narrow Intelligence (ANI)</li>
+              <li>Artificial General Intelligence (AGI)</li>
+              <li>Artificial Super Intelligence (ASI)</li>
             </ul>
           </section>
+          <section>
+            <h2>Wet van Moore</h2>
+            <ul>
+              <li>1965</li>
+              <li>Gordon Moore</li>
+              <li>Elke 2 jaar verdubbelt de rekenkracht van computers</li>
+              <li>Chip = schakeling van transistoren​
+
+                Apple M1 = 16 miljard transistors</li>
+                <li>Versnelling vertraagd door fysische limieten bereikt​</li>
+            </ul>
+
+          </section>
+          <section>
+            <h2>Quantumcomputers</h2>
+            <ul>
+              <li>principes van kwantummechanica​</li>
+              <li>                Beweging en kracht van atomen en kleiner…​
+              </li>
+                <li>
+                Koeling tot -273 °C</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Industriele revoluties</h2>
+            <ul>
+              <li>1e: 1760 - 1840: Stoommachines</li>
+              <li>2e: 1870 - 1914: Elektriciteit</li>
+              <li>3e: 1969 - 2000: Computers</li>
+              <li>4e: 2010 - heden: AI</li>
+            </ul>
+          </section>
+
         </section>
         <section>
-            <section>
-                <h2>Cursusoverzicht</h2>
-            </section>
-            <section data-markdown>
-                <textarea data-template>
-                [Week 1: AI Fundamentals (deel 1)](https://www.notion.so/Week-1-AI-Fundamentals-deel-1-ac742d8af0f14ed1bae113d7132d921a)
+          <section
+            data-background-image="../assets/images/definition/main-page.jpeg"
+            data-background-opacity=".2"
+          >
+            <h1>AI Definitions</h1>
+          </section>
 
+          <section
+            data-background-image="../assets/images/definition/AI.png"
+            data-background-size="contain"
+          ></section>
 
-[Week 2: AI Fundamentals (deel 2)](https://www.notion.so/Week-2-AI-Fundamentals-deel-2-44ab61adf2804f379446a2713009b4f6?pvs=21)
+          <section
+            data-background-image="../assets/images/definition/MachineLearning.png"
+            data-background-size="contain"
+          ></section>
 
-[Week 3: Data Sources: Relationele databases vs. niet-relationele databases](https://www.notion.so/Week-3-Data-Sources-Relationele-databases-vs-niet-relationele-databases-6a0f8ccea96542e7b965bdf363009c6f?pvs=21)
+          <section
+            data-background-image="../assets/images/definition/DeepLearning.png"
+            data-background-size="contain"
+          ></section>
+          <section data-background-image="../assets/images/introduction/ml-vs-dl.png" data-background-size="contain"></section>
 
-[Week 4: Data Sources: Bestandsgebaseerde gegevens](https://www.notion.so/Week-4-Data-Sources-Bestandsgebaseerde-gegevens-1aab9f362c244681b5dcdfb6cc633dd4?pvs=21)
+          <section
+            data-background-image="../assets/images/definition/talking.gif"
+            data-background-opacity=".2"
+          >
+            <h2>Natural Language Processing (NLP)</h2>
+            <p language="nl">
+              NLP is een tak van AI die machines in staat stelt om menselijke
+              taal te begrijpen, menselijke taal op een waardevolle manier te
+              interpreteren en te genereren. <br>
+              NLU vs NLG
+            </p>
+            <p language="en">
+              NLP is a branch of AI that enables machines to understand,
+              interpret, and generate human language in a valuable way. <br>
+              NLU vs NLG
+            </p>
+          </section>
+          <section data-background-image="../assets/images/definition/talking.gif"
+          data-background-opacity=".2">
+            <h2>Natural Language Processing (NLP): examples</h2>
+            <ul>
+                <li>Machine Translation</li>
+                <li>Virtual assistant / chatbot</li>
+                <li>Sentiment analysis</li>
+                <li>Spam detection</li>
+            </ul>
+          </section>
+          <section
+            data-background-image="../assets/images/definition/nlp.png"
+            data-background-size="contain"
+          ></section>
 
-[Week 5: Python: Basisbeginselen voor Machine Learning (deel 1)](https://www.notion.so/Week-5-Python-Basisbeginselen-voor-Machine-Learning-deel-1-106a635a4670445883f7b281999becdb?pvs=21)
+          <section
+            data-background-image="../assets/images/definition/computer-vision.jpeg"
+            data-background-opacity=".5"
+          >
+            <h2>Computer Vision</h2>
+            <p language="nl">
+              Computervisie houdt in dat machines visuele informatie uit de
+              wereld kunnen interpreteren, zoals afbeeldingen en video's.
+            </p>
+            <p language="en">
+              Computer Vision involves teaching machines to interpret and
+              understand visual information from the world, such as images and
+              videos.
+            </p>
+          </section>
+          <!-- Artificial Neural Networks (ANNs) -->
+          <section
+            data-background-image="../assets/images/definition/neural-networks.jpeg"
+            data-background-opacity=".5"
+          >
+            <h2>Artificial Neural Networks (ANNs)</h2>
+            <p language="nl">
+              ANN's zijn computersystemen die geïnspireerd zijn op de structuur
+              en functie van biologische neurale netwerken, gebruikt bij diep
+              leren.
+            </p>
+            <p language="en">
+              Artificial Neural Networks (ANNs) are computer systems inspired by
+              the structure and function of biological neural networks, used in
+              deep learning.
+            </p>
+          </section>
 
-[Week 6: Python: Basisbeginselen voor Machine Learning (deel 2)](https://www.notion.so/Week-6-Python-Basisbeginselen-voor-Machine-Learning-deel-2-333b0530342e4588b3b8e479f1f847ca?pvs=21)
+          <!-- Algorithm -->
+          <section
+            data-background-image="../assets/images/definition/algorithm.gif"
+            data-background-opacity=".3"
+          >
+            <h2>Algorithm</h2>
+            <p language="nl">
+              Een algoritme is een stapsgewijze reeks instructies voor het
+              oplossen van een specifiek probleem of een taak uit te voeren.
+            </p>
+            <p language="en">
+              An algorithm is a step-by-step sequence of instructions for
+              solving a specific problem or performing a task.
+            </p>
+          </section>
 
-[Week 7: Supervised Learning met Lineaire Regressie](https://www.notion.so/Week-7-Supervised-Learning-met-Lineaire-Regressie-ff74f769f86449da87f04c092cc0f64e?pvs=21)
----
-[Week 8: Supervised Learning met Logistische Regressie](https://www.notion.so/Week-8-Supervised-Learning-met-Logistische-Regressie-92601a2853104a50b6450c8f63794358?pvs=21)
+          <!-- Data Science -->
+          <section
+            data-background-image="../assets/images/definition/data-center.gif"
+            data-background-opacity=".3"
+          >
+            <h2>Data Science</h2>
+            <p language="nl">
+              Data Science combineert domeinkennis, programmeervaardigheden en
+              gegevensanalyse om zinvolle inzichten uit gegevens te halen.
+            </p>
+            <p language="en">
+              Data Science combines domain knowledge, programming skills, and
+              data analysis to extract meaningful insights from data.
+            </p>
+          </section>
 
-[Week 9: Unsupervised Learning met Clustering](https://www.notion.so/Week-9-Unsupervised-Learning-met-Clustering-3c3e720b161d4cf8b804b75c2b869515?pvs=21)
+          <!-- Narrow AI (Weak AI) -->
+          <section
+            data-background-image="../assets/images/definition/weak-ai.jpeg"
+            data-background-opacity=".3"
+          >
+            <h2>Narrow AI (Weak AI)</h2>
+            <p language="nl">
+              Nauwe AI, ook bekend als zwakke AI, verwijst naar AI-systemen die
+              zijn ontworpen voor specifieke taken of domeinen, zonder de
+              algemene intelligentie zoals we die bij mensen zien.
+            </p>
+            <p language="en">
+              Narrow AI, also known as Weak AI, refers to AI systems designed
+              for specific tasks or domains, lacking the general intelligence
+              seen in humans.
+            </p>
+          </section>
 
-[Week 10: Reinforcement Learning met Markov Decision Processen (MDP) en Q-Learning (deel 1) (1)](https://www.notion.so/Week-10-Reinforcement-Learning-met-Markov-Decision-Processen-MDP-en-Q-Learning-deel-1-1-227785bd7fd447dba723d503d449d7bd?pvs=21)
+          <!-- GPU -->
+          <section
+            data-background-image="../assets/images/definition/weak-ai.jpeg"
+            data-background-opacity=".3"
+          >
+            <h2>GPU</h2>
+            <p language="nl">Graphical Processing Unit</p>
+            <p language="en">GPU stands for Graphics Processing Unit.</p>
+          </section>
 
-[Week 11: Reinforcement Learning met Markov Decision Processen (MDP) en Q-Learning (deel 2)](https://www.notion.so/Week-11-Reinforcement-Learning-met-Markov-Decision-Processen-MDP-en-Q-Learning-deel-2-65cd7668d94a4f2888c69cb389f18b83?pvs=21)
+          <!-- General AI (Strong AI) -->
+          <section
+            data-background-image="../assets/images/definition/strong-ai.jpeg"
+            data-background-opacity=".3"
+          >
+            <h2>General AI (Strong AI)</h2>
+            <p language="nl">
+              Algemene AI, of Sterke AI, staat voor machines met een menselijke
+              intelligentie die een breed scala aan cognitieve taken kunnen
+              uitvoeren en verschillende domeinen kunnen begrijpen.
+            </p>
+            <p language="en">
+              General AI, or Strong AI, refers to machines with human-like
+              intelligence capable of performing a wide range of cognitive tasks
+              and understanding various domains.
+            </p>
+          </section>
 
-[Week 12: Reinforcement Learning met Markov Decision Processen (MDP) en Q-Learning (deel 3)](https://www.notion.so/Week-12-Reinforcement-Learning-met-Markov-Decision-Processen-MDP-en-Q-Learning-deel-3-bf0aa2469c674e08982959e74b8a6b16?pvs=21)
-                </textarea>
-</section>
-        </section>
-        <section>
+          <!-- Supervised Learning -->
+          <section
+            data-background-image="../assets/images/definition/labeled-data.png"
+            data-background-opacity=".3"
+          >
+            <h2>Supervised Learning</h2>
+            <p language="nl">
+              Supervised Learning is een type ML waarbij het model wordt
+              getraind op gelabelde gegevens, voorspellingen doet en de
+              nauwkeurigheid in de loop van de tijd verbetert.
+            </p>
+            <p language="en">
+              Supervised Learning is a type of ML where the model is trained on
+              labeled data, makes predictions, and improves accuracy over time.
+            </p>
+          </section>
+
+          <!-- Unsupervised Learning -->
+          <section
+            data-background-image="../assets/images/definition/unlabeled-data-car.jpg"
+            data-background-opacity=".3"
+          >
+            <h2>Unsupervised Learning</h2>
+            <p language="nl">
+              Unsupervised Learning is een type ML waarbij het model werkt met
+              ongelabelde gegevens om zelf patronen en relaties te ontdekken.
+            </p>
+            <p language="en">
+              Unsupervised Learning is a type of ML where the model works with
+              unlabeled data to discover patterns and relationships on its own.
+            </p>
+          </section>
+
+          <!-- Reinforcement Learning -->
+          <section
+            data-background-image="../assets/images/definition/feedback.webp"
+            data-background-opacity=".3"
+          >
+            <h2>Reinforcement Learning</h2>
+            <p language="nl">
+              Versterkingsleren is een vorm van ML waarbij agenten leren om
+              beslissingen te nemen door interactie met een omgeving en het
+              ontvangen van beloningen of straffen.
+            </p>
+            <p language="en">
+              Reinforcement Learning is a form of ML where agents learn to make
+              decisions through interaction with an environment and receiving
+              rewards or penalties.
+            </p>
+          </section>
+
+          <!-- Big Data -->
+          <section
+            data-background-image="../assets/images/definition/big-data.gif"
+            data-background-opacity=".3"
+          >
+            <h2>Big Data</h2>
+            <p language="nl">
+              Big Data verwijst naar extreem grote en complexe datasets die
+              gespecialiseerde tools en technieken nodig hebben voor opslag,
+              verwerking en analyse.
+            </p>
+            <p language="en">
+              Big Data refers to extremely large and complex datasets that
+              require specialized tools and techniques for storage, processing,
+              and analysis.
+            </p>
+          </section>
+
+          <!-- AI Ethics -->
+          <section
+            data-background-image="../assets/images/definition/dilemma.gif"
+            data-background-opacity=".3"
+          >
+            <h2>AI Ethics</h2>
+            <p language="nl">
+              AI-ethiek gaat in op de morele en maatschappelijke implicaties van
+              AI, waaronder eerlijkheid, transparantie en het verantwoordelijke
+              gebruik van AI technologieën.
+            </p>
+            <p language="en">
+              AI Ethics addresses the moral and societal implications of AI,
+              including fairness, transparency, and responsible use of AI
+              technologies.
+            </p>
+          </section>
+
+          <!-- AI Bias -->
+          <section
+            data-background-image="../assets/images/definition/racist.webp"
+            data-background-opacity=".3"
+          >
+            <h2>AI Bias</h2>
+            <p language="nl">
+              AI-bias treedt op wanneer algoritmen voor machinaal leren
+              oneerlijke of discriminerende beslissingen nemen op basis van
+              bevooroordeelde trainingsgegevens.
+            </p>
+            <p language="en">
+              AI bias occurs when machine learning algorithms make unfair or
+              discriminatory decisions based on biased training data.
+            </p>
+            <a
+              href="https://www.businessinsider.com/student-uses-playrgound-ai-for-professional-headshot-turned-white-2023-8?op=1&r=US&IR=T"
+              target="_blank"
+              >Article</a
+            >
+          </section>
+
+          <!-- Chatbot -->
+          <section
+            data-background-image="../assets/images/definition/her.jpg"
+            data-background-opacity=".3"
+          >
+            <h2>Chatbot</h2>
+            <p language="nl">
+              Een Chatbot is een AI-programma dat is ontworpen om een gesprek
+              met gebruikers te simuleren. conversatie met gebruikers te
+              simuleren, vaak gebruikt voor klantenondersteuning of het ophalen
+              van informatie.
+            </p>
+            <p language="en">
+              A Chatbot is an AI program designed to simulate a conversation
+              with users, often used for customer support or information
+              retrieval.
+            </p>
+          </section>
+
+          <!-- IoT (Internet of Things) -->
+          <section
+            data-background-image="../assets/images/definition/iot.jpg"
+            data-background-opacity=".3"
+          >
+            <h2>IoT (Internet of Things)</h2>
+            <p language="nl">
+              IoT is een netwerk van onderling verbonden apparaten en objecten
+              die gegevens kunnen verzamelen en uitwisselen, vaak geïntegreerd
+              met AI voor slimme toepassingen.
+            </p>
+            <p language="en">
+              IoT is a network of interconnected devices and objects that can
+              collect and exchange data, often integrated with AI for smart
+              applications.
+            </p>
+          </section>
+
+          <!-- Robotic Process Automation (RPA) -->
+          <section
+            data-background-image="../assets/images/definition/robots.gif"
+            data-background-opacity=".3"
+          >
+            <h2>Robotic Process Automation (RPA)</h2>
+            <p language="nl">
+              RPA maakt gebruik van softwarerobots of "bots" voor het
+              automatiseren van repetitieve taken en processen, waardoor de
+              efficiëntie in verschillende industrieën verhoogt.
+            </p>
+            <p language="en">
+              RPA uses software robots or "bots" to automate repetitive tasks
+              and processes, increasing efficiency in various industries.
+            </p>
+          </section>
+
+          <!-- GAN (Generative Adversarial Network) -->
+          <section data-background-image="../assets/images/definition/gan-cat.gif" data-background-opacity=".2">
+            <h2>GAN (Generative Adversarial Network)</h2>
+            <p language="nl">
+                GAN is een type deep learning-model dat bestaat uit een generator en een discriminator die wordt gebruikt voor het genereren van synthetische gegevens en afbeeldingen.
+            </p>
+            <p language="en">
+              GAN is a type of deep learning model consisting of a generator and
+              a discriminator used for generating synthetic data and images.
+            </p>
+          </section>
+
+          <!-- LLM (Large Language Models) -->
+          <section data-background-image="../assets/images/definition/large-language-model.jpeg" data-background-opacity=".2">
+            <h2>LLM (Large Language Models)</h2>
+            <p language="nl">
+              LLM's zijn extreem grote neurale netwerken getraind op enorme
+              hoeveelheden tekstgegevens, in staat om verschillende natuurlijke
+              taal verwerkingstaken uitvoeren.
+            </p>
+            <p language="en">
+              LLMs are extremely large neural networks trained on vast amounts
+              of text data, capable of performing various natural language
+              processing tasks.
+            </p>
+          </section>
+
+          <!-- Diffusion Models -->
+          <section data-background-image="../assets/images/definition/noise.gif" data-background-opacity=".2">
+            <h2>Diffusion Models</h2>
+            <p language="nl">
+              Diffusiemodellen zijn probabilistische generatieve modellen die
+              worden gebruikt om het modelleren en genereren van
+              gegevensreeksen, vaak toegepast op tekst, afbeeldingen en
+              tijdreeksgegevens.
+            </p>
+            <p language="en">
+              Diffusion Models are probabilistic generative models used for
+              modeling and generating data sequences, often applied to text,
+              images, and time series data.
+            </p>
+          </section>
+
+          <!-- Audio/Image Synthesis -->
+          <section data-background-image="../assets/images/definition/deepfake-obama.jpeg" data-background-opacity=".2">
+            <h2>Audio/Image Synthesis</h2>
+            <p language="nl">
+              Audio/beeldsynthese houdt in het genereren van realistische audio
+              of videobeelden met behulp van AI-technieken, zoals deep learning
+              en GAN's.
+            </p>
+            <p language="en">
+              Audio/Image Synthesis involves generating realistic audio or image
+              data using AI techniques, such as deep learning and GANs.
+            </p>
+          </section>
+
+          <!-- GPU (Graphics Processing Unit) -->
+          <section data-background-image="../assets/images/definition/parallel-computation.gif" data-background-opacity=".2">
+            <h2>GPU (Graphics Processing Unit)</h2>
+            <p language="nl">
+              Een GPU is gespecialiseerde hardware die wordt gebruikt om
+              berekeningen in deep learning en AI, bekend om zijn parallelle
+              verwerkingscapaciteiten.
+            </p>
+            <p language="en">
+              A GPU is specialized hardware used to accelerate computations in
+              deep learning and AI, known for its parallel processing
+              capabilities.
+            </p>
+          </section>
+        </section>        <section>
           <section>
             <h3>Bronnen</h3>
             <ul>
@@ -115,6 +546,7 @@
         </section>
       </div>
     </div>
+    <script src="../dist/languageButton.js"></script>
 
     <script src="../dist/reveal.js"></script>
     <script src="../plugin/notes/notes.js"></script>
